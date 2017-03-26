@@ -1,2 +1,0 @@
-# Harsoet
-free lancing(Aryan)
