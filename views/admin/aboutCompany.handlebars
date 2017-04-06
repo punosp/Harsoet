@@ -1,0 +1,90 @@
+<!-- Content Wrapper. Contains page content -->
+ <div class="content-wrapper">
+   <!-- Content Header (Page header) -->
+   <section class="content-header">
+     <h1>
+       Company
+       <a href="/admin/aboutCompanyEdit" class="btn btn-primary btn-md"> Edit </a>
+     </h1>
+
+   </section>
+
+   <!-- Main content -->
+   <section class="content">
+     <div class="row">
+       <div class="col-md-12">
+
+         <div class="box box-info">
+           <div class="box-header">
+             <h3 class="box-title">About
+             </h3>
+             <!-- tools box -->
+             <div class="pull-right box-tools">
+               <button type="button" class="btn btn-info btn-sm" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                 <i class="fa fa-minus"></i></button>
+
+             </div>
+             <!-- /. tools -->
+           </div>
+           <!-- /.box-header -->
+           <div class="box-body pad">
+                   {{{record.0.about}}}
+           </div>
+         </div>
+         <!-- /.box -->
+         <div class="box box-info">
+           <div class="box-header">
+             <h3 class="box-title">History
+             </h3>
+             <!-- tools box -->
+             <div class="pull-right box-tools">
+               <button type="button" class="btn btn-info btn-sm" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                 <i class="fa fa-minus"></i></button>
+
+             </div>
+             <!-- /. tools -->
+           </div>
+           <!-- /.box-header -->
+           <div class="box-body pad">
+
+                                           {{{record.0.history}}}
+
+           </div>
+         </div>
+
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Stats</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body no-padding">
+              <table class="table table-condensed">
+                <tr>
+                  <th style="width: 10px">#</th>
+                  <th>Name</th>
+                  <th>Value</td>
+                </tr>
+                <tr>
+                  <td>1.</td>
+                  <td>No of consultants</td>
+                  <td>{{record.0.consultantsNo}}</td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>No of Services provided</td>
+                  <td>{{record.0.ServicesNo}}</td>
+                </tr>
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+
+
+       </div>
+       <!-- /.col-->
+     </div>
+     <!-- ./row -->
+   </section>
+   <!-- /.content -->
+ </div>
+ <!-- /.content-wrapper -->

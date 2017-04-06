@@ -48,4 +48,29 @@ module.exports.policies = {
 		// before letting any users feed our rabbits
 		// feed : ['isNiceToAnimals', 'hasRabbitFood']
 	// }
+
+  AdminController: {
+    dashBoard: ["isAuthenticated","isAdminRole"],
+    loginSubmit: ["validation/LoginValidation", "UserLoginCheck", "LocalLogin"],
+    forgotPassword: ["validation/ForgotPasswordValidation"],
+    resetPasswordSubmit: ["validation/ResetPasswordValidation"],
+    enterChangedPassword: "isAuthenticated",
+    changePassword: ["isAuthenticated","validation/ChangePasswordValidation"],
+    dashBoard: ["isAuthenticated","isAdminRole"],
+    companyNewsAdd: ["isAuthenticated","isAdminRole"],
+    companyFaqsAdd: ["isAuthenticated","isAdminRole"],
+    companyHistory: ["isAuthenticated","isAdminRole"],
+    aboutCompanyEdit: ["isAuthenticated","isAdminRole"],
+    teamAdd: ["isAuthenticated","isAdminRole"],
+    addTeamMember: ["validation/AddTeamValidation","isAuthenticated","isAdminRole"],
+    addCompanyNews: ["validation/AddNewsValidation","isAuthenticated","isAdminRole"],
+    addCompanyFaqs: ["validation/AddFaqsValidation","isAuthenticated","isAdminRole"],
+    aboutCompanyAdd: ["validation/AddAboutValidation","isAuthenticated","isAdminRole"],
+    addCompanyAddress: ["validation/AddAddressValidation","isAuthenticated","isAdminRole"],
+    aboutCompany: ["isAuthenticated","isAdminRole"],
+    errorPage: ["isAuthenticated","isAdminRole"]
+  },
+  UserController: {
+
+  }
 };

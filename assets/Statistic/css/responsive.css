@@ -1,0 +1,2184 @@
+
+/* Large Layout: 1200px. */
+@media only screen and (min-width: 1200px){
+.container {padding: 0;}
+.container-fluid{padding: 0;}
+    
+    
+    
+}
+/* Medium screen  */ 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    
+/*** 
+=============================================
+	Header area style
+=============================================
+***/
+.header-area .contact-info {
+  float: left;
+  top: 15px;
+}
+
+/*** 
+=============================================
+	Mainmeu area style
+=============================================
+***/
+.mainmeu-area .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}    
+.main-menu .navigation li {
+  margin-right: 20px;
+}    
+    
+/*** 
+=============================================
+	call-to-action area style
+=============================================
+***/    
+.call-to-action-area .title h2 {
+  font-size: 20px;
+}    
+    
+/*** 
+=============================================
+	welcome area style
+=============================================
+***/
+.welcome-area .video-box {
+  padding-top: 40px;
+}    
+.welcome-area .video-box img {
+  max-width: 100%;
+}    
+
+/*** 
+=============================================
+	how-work-and-faq area style
+=============================================
+***/    
+.how-work-and-faq-area .faq-content {
+  margin-top: 40px;
+}    
+    
+/*** 
+=============================================
+	footer-area style
+=============================================
+***/       
+.single-footer-widget .contact-address .carousel-indicators {
+  top: 30px;
+  left: 70%;
+}
+
+/*** 
+=============================================
+	footer-bottom area style
+=============================================
+***/     
+.footer-bottom-area .footer-menu li {
+  margin: 0 0 0 18px;
+}
+
+/*** 
+=============================================
+	About style
+=============================================
+***/ 
+#about .content .about-tab .tab-content .text-holder {
+  top: -5px;
+}       
+#about .growth-statistics .right {
+  float: left !important;
+  margin-top: 40px;
+  overflow: hidden;
+}
+    
+/*** 
+=============================================
+	Slogan Area style
+=============================================
+***/    
+.slogan-area .title h2 {
+  font-size: 18px;
+}    
+    
+/*** 
+=============================================
+	Company History Area style
+=============================================
+***/    
+.company-history-area .content .img-holder-items .single-img-holder-item {
+  width: 306px;
+}    
+
+/*** 
+=============================================
+	Our Team Area style
+=============================================
+***/    
+.single-team-member .img-holder .overlay .box .content .team-member-social-links li {
+  display: inline-block;
+  margin: 0 5px;
+}    
+.single-team-member .img-holder .overlay .box .content a.view-profile {
+  height: 35px;
+  padding: 4px 0;
+  width: 115px;
+}
+
+/*** 
+=============================================
+    Faq content Area style
+=============================================
+***/      
+.faq-content-area .faq-content-holder .top .search-question {
+  float: left !important;
+  margin: 0 0 20px;
+}    
+    
+/*** 
+=============================================
+	Client feedback Area style
+=============================================
+***/
+.client-feedback-area {
+  padding-bottom: 50px;
+  padding-top: 90px;
+}
+
+/*** 
+=============================================
+	Branch area style
+=============================================
+***/    
+.branch-area .branch-title h3 {
+  font-size: 17px;
+} 
+.branch-area .select-field select {
+  width: 280px;
+}    
+    
+/*** 
+=============================================
+    Project Gallery  style
+=============================================
+***/ 
+.project-filter li {
+  margin: 0 3.5px;
+}    
+.project-filter li span {
+  padding: 9px 10px;
+}    
+     
+/*** 
+=============================================
+    Project Single  style
+=============================================
+***/    
+.project-single .project-info {
+  margin-right: 0;
+}    
+.project-single .content-holder {
+  margin-top: 25px;
+  padding-left: 0;
+}
+
+.project-single .project-analysis .text-holder {
+  padding-left: 150px;
+}    
+.project-single .project-analysis .analysis-chart {
+  padding-left: 150px;
+}    
+    
+.project-single .project-planning .text-holder {
+  padding-left: 150px;
+}    
+.project-single .project-planning .project-planning-step {
+  padding-left: 150px;
+}    
+    
+.project-single .project-execution .text-holder {
+  padding-left: 150px;
+}
+.project-single .project-execution .perform {
+  padding-left: 150px;
+} 
+    
+.project-single .project-results .text-holder {
+  padding-left: 150px;
+}
+.project-single .project-results .project-results-chart {
+  padding-left: 150px;
+}    
+ 
+
+    
+/*** 
+=============================================
+    Service v1 area  style
+=============================================
+***/
+.services-v1-content #single-services-carousel {
+  padding: 40px 30px 70px 40px;
+}    
+.services-v1-content #single-services-carousel .single-carousel-service-item .img-holder, .services-v1-content #single-services-carousel .single-carousel-service-item .content-holder {
+  display: block;
+}    
+.services-v1-content #single-services-carousel .single-carousel-service-item .img-holder {
+  width: 100%;
+}    
+.services-v1-content #single-services-carousel .single-carousel-service-item .img-holder img {
+  width: 100%;
+}    
+.services-v1-content #single-services-carousel .single-carousel-service-item .content-holder {
+  padding-left: 0;
+}    
+.services-v1-content #single-services-carousel .carousel-indicators {
+  bottom: 15px;
+  left: 65px;
+}
+    
+.provide-service-content {
+  margin-right: 0;
+}    
+.global-wise-audits-chart {
+  margin-left: 0;
+}
+    
+/*** 
+=============================================
+    Service v2 area  style
+=============================================
+***/   
+.services-v2-content .business-planning .img-holder {
+  margin-right: 0;
+}    
+.services-v2-content .business-planning .img-holder img {
+  width: 100%;
+}    
+.services-v2-content .business-planning .content-holder {
+  margin-left: 0;
+  margin-top: 30px;
+}    
+
+.services-v2-content .business-planning-benefits {
+  padding-bottom: 60px;
+}    
+.services-v2-content .business-planning-benefits .content-holder {
+  margin-right: 0;
+}    
+.services-v2-content .business-planning-benefits .video-gallery-box {
+  float: left !important;
+  margin-left: 0;
+  margin-top: 35px;
+} 
+    
+/*** 
+=============================================
+    Service v3 area  style
+=============================================
+***/    
+.services-v3-content .single-service-carousel .img-holder {
+  float: none !important;
+}    
+.services-v3-content .single-service-carousel .img-holder img {
+  width: 100% !important;
+}    
+.services-v3-content .single-service-carousel .text-holder {
+  margin-left: 0;
+  padding: 60px 30px 70px;
+  position: relative;
+  z-index: -1;
+}    
+
+.profit-improvement-content .chart-holder {
+  margin-right: 0;
+}    
+.profit-improvement-content .text-holder {
+  margin-left: 0;
+  margin-top: 30px;
+}    
+
+/*** 
+=============================================
+    Service v4 area  style
+=============================================
+***/     
+.service-carousel-content-v4 .inner-content .img-holder {
+  padding: 30px;
+  width: 100%;
+}   
+.service-carousel-content-v4 .inner-content .img-holder img{
+  width: 100%;        
+}    
+.service-carousel-content-v4 .inner-content .text-holder {
+  padding: 0 30px 30px;
+  width: 100%;
+}    
+.service-carousel-content-v4 .carousel-indicators {
+  width: 290px;
+}    
+ 
+.services-v4-content .what-wedo-content-holder .video-gallery-box {
+  margin-right: 0;
+} 
+.services-v4-content .what-wedo-content-holder .video-gallery-box img {
+  width: 100%;
+}    
+.services-v4-content .what-wedo-content-holder .text-holder {
+  margin-left: 0;
+  margin-top: 30px;
+}    
+    
+.services-v4-content .research-analysis .text-holder {
+  margin-right: 0;
+}
+.services-v4-content .research-analysis .chart-holder {
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-top: 40px;
+}
+    
+/*** 
+=============================================
+    Service v5 area  style
+=============================================
+***/    
+.services-v5-content .it-consulting-service .video-gallery-box {
+  margin-right: 0;
+}    
+.services-v5-content .it-consulting-service .video-gallery-box img {
+  width: 100%;
+} 
+.services-v5-content .it-consulting-service .text-holder {
+  margin-left: 0;
+  margin-top: 20px;
+}
+    
+/*** 
+=============================================
+    Service v6 area  style
+=============================================
+***/    
+.services-v6-content .srvice-capabilities-content .text-holder {
+  margin-right: 0;
+}    
+.services-v6-content .srvice-capabilities-content .img-holder {
+  margin-left: 0;
+  margin-top: 40px;
+}    
+.services-v6-content .srvice-capabilities-content .img-holder img {
+  width: 100%;
+}    
+    
+/*** 
+=============================================
+    Service v7 area  style
+=============================================
+***/    
+.services-v7-content .business-planning-benefits .content-holder {
+  margin-right: 0;
+}
+.services-v7-content .business-planning-benefits .chart-holder {
+  margin-left: 0;
+  margin-top: 40px;
+}    
+        
+/*** 
+=============================================
+   Cart area  style
+=============================================
+***/    
+.cart-bottom .calculate-shipping input.mar-bottom[type="text"] {
+  margin-bottom: 25px;
+}    
+    
+/*** 
+=============================================
+	testimonial-carousel area style
+=============================================
+***/ 
+    
+.testimonial-carousel-area .bx-wrapper .bx-pager, 
+.testimonial-carousel-area .bx-wrapper .bx-controls-auto {
+  bottom: 15px;
+  position: absolute;
+  width: 100%;
+}    
+    
+/*** 
+=============================================
+   Product Detail Area Style
+=============================================
+***/      
+.product-detail-area .product-detail-content .product-content-box .img-box {
+  margin-right: 0;
+}
+.product-detail-area .product-detail-content .product-content-box .content-box {
+  margin-left: 0;
+}
+.product-detail-area .product-detail-content .product-content-box .content-box .location-box form span {
+  display: block;
+  float: left !important;
+}
+.product-detail-area .product-detail-content .product-content-box .content-box .location-box .add-to-cart-box {
+  float: left;
+  margin: 10px 0 0;
+  overflow: hidden;
+}    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+    
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+/*** 
+=============================================
+	Header area style
+=============================================
+***/
+.header-area .contact-info {
+  float: left;
+  top: 10px;
+  padding-bottom: 10px;
+}
+.header-area .contact-info li a.request-quote {
+  top: 10px;
+}    
+.social-links ul {
+  margin-left: 0px;
+}
+    
+/*** 
+=============================================
+	Mainmeu area style
+=============================================
+***/   
+.mainmeu-area .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}    
+.main-menu .navigation li {
+  margin-right: 20px;
+}    
+    
+/*** 
+=============================================
+	call-to-action area style
+=============================================
+***/ 
+.call-to-action-area {
+  padding-bottom: 30px;
+  padding-top: 14px;
+}    
+.call-to-action-area .title {
+  float: none !important;
+  text-align: center;
+}
+.call-to-action-area .button {
+  float: none !important;
+}    
+.call-to-action-area .button a {
+  margin: 0 auto;
+}    
+.call-to-action-area .title h2 {
+  margin-bottom: 5px;
+}    
+    
+/*** 
+=============================================
+	welcome area style
+=============================================
+***/
+.welcome-area .video-box {
+  padding-top: 40px;
+}    
+.welcome-area .video-box img {
+  max-width: 100%;
+}    
+    
+/*** 
+=============================================
+	statistic area style
+=============================================
+***/
+.statistic-area {
+  padding-bottom: 50px;
+}
+.statistic-area .single-statistic-item .content {
+  margin: 0 0 50px;
+}    
+ 
+/*** 
+=============================================
+	Fact counter area style
+=============================================
+***/
+.fact-counter-area {
+  padding-bottom: 100px;
+}    
+.single-fact-counter {
+  margin-bottom: 30px;
+}    
+    
+/*** 
+=============================================
+	how-work-and-faq area style
+=============================================
+***/    
+.how-work-and-faq-area .faq-content {
+  margin-top: 40px;
+}        
+    
+/*** 
+=============================================
+	footer-area style
+=============================================
+***/       
+.single-footer-widget.Statistic-pdbottom {
+  padding-bottom: 50px;
+  float: left;
+  overflow: hidden;
+}    
+.single-footer-widget.project-pdbottom {
+  overflow: hidden;
+  padding-bottom: 50px;
+}    
+.single-footer-widget .contact-address .carousel-indicators {
+  left: 50px;
+  top: 300px;
+}    
+ 
+/*** 
+=============================================
+	footer-bottom area style
+=============================================
+***/     
+.footer-bottom-area .copyright-text p {
+  margin: 0 0 10px;
+  text-align: center;
+}    
+.footer-bottom-area .footer-menu {
+  float: none;
+  text-align: center;
+}
+.footer-bottom-area .footer-menu li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+/*** 
+=============================================
+	About style
+=============================================
+***/
+#about {
+  padding-bottom: 40px;
+  padding-top: 90px;
+}    
+#about .content {
+  margin-top: 0px;
+  padding-top: 0;
+}
+#about .content .about-tab .tab-content .text-holder {
+  padding-bottom: 15px;
+  top: -5px;
+}      
+#about .content .about-tab .tab-content .item-list .single-item-list {
+  margin: 0 15px 20px;
+}
+#about .content .about-tab .tab-content .item-list .single-item-list .content {
+  margin-top: 0;
+  padding-left: 10px;
+  padding-top: 0;
+}    
+#about .content .about-tab .tab-content .item-list .single-item-list .icon-holder span::before {
+  top: -3px;
+}    
+#about .growth-statistics .right {
+  float: left !important;
+  margin-top: 40px;
+}    
+#about .growth-statistics .right .about-page-fact-counter .single-fact-counter {
+  margin: 0;
+}
+.about-sidebar {
+  padding-top: 70px;
+}    
+    
+/*** 
+=============================================
+	Slogan Area style
+=============================================
+***/ 
+.slogan-area {
+  padding-bottom: 30px;
+  padding-top: 20px;
+}    
+.slogan-area .title{
+  float: none !important;
+  text-align: center;
+  display: block;
+}    
+.slogan-area .title h2 {
+  line-height: 40px !important;
+}
+.slogan-area .buttons {
+  display: block;
+  float: none !important;
+  margin: 15px auto 0;
+  width: 175px;
+}
+
+/*** 
+=============================================
+	Company History Area style
+=============================================
+***/ 
+.company-history-area {
+  padding-bottom: 40px;
+  padding-top: 90px;
+}    
+.company-history-area .content .img-holder-items .single-img-holder-item {
+  width: 358px;
+}    
+
+/*** 
+=============================================
+	Our Team Area style
+=============================================
+***/ 
+.our-team-area {
+  padding-bottom: 55px;
+  padding-top: 90px;
+}    
+.our-team-area .team-member {
+  padding-top: 40px;
+}        
+    
+/*** 
+=============================================
+	Our Partner Area style
+=============================================
+***/     
+.our-partner-area .partner-single-item .partner-logo {
+  text-align: center;
+}    
+.our-partner-area .partner-single-item {
+  margin-bottom: 35px;
+}    
+    
+/*** 
+=============================================
+    Faq content Area style
+=============================================
+***/      
+.faq-content-area .faq-content-holder .top .search-question {
+  float: left !important;
+  margin: 0 0 20px;
+}    
+   
+/*** 
+=============================================
+	Career single Area style
+=============================================
+***/    
+.career-single-area {
+  padding-bottom: 40px;
+  padding-top: 90px;
+}    
+.career-single-area .career-single .job-summary .job-summary-list ul {
+  margin: 0 25px 0 0;
+} 
+
+/*** 
+=============================================
+	Blog with sidebar style
+=============================================
+***/    
+.sidebar-wrapper {
+  margin-top: 70px;
+}    
+    
+/*** 
+=============================================
+	List view with sidebar style
+=============================================
+***/    
+.list-view-with-sidebar .blog-post .single-blog-post .title {
+  margin: 20px 0 0;
+  padding-bottom: 0;
+}    
+
+/*** 
+=============================================
+	blog detail style
+=============================================
+***/    
+.blog-detail .blog-post .reply-box .reply-form button {
+  margin-top: 26px;
+}    
+
+/*** 
+=============================================
+	Branch area style
+=============================================
+***/     
+.branch-area .branch-title {
+  float: none !important;
+  text-align: center;
+}
+.branch-area .branch-title h3 {
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0 0 10px;
+}    
+.branch-area .select-field {
+  float: none !important;
+}    
+.branch-area .select-field select {
+  margin: 0 auto;
+}    
+
+/*** 
+=============================================
+	contact form area style
+=============================================
+***/      
+.contact-form-area {
+  padding-bottom: 90px;
+  padding-top: 100px;
+}    
+ 
+/*** 
+=============================================
+    Project Gallery  style
+=============================================
+***/
+.project-filter {
+  margin-bottom: 40px;
+}    
+.project-filter li {
+  margin: 0 3.5px 10px;
+}    
+.project-filter li span {
+  padding: 9px 10px;
+}    
+.single-project.span-3 {
+  width: 50%;
+} 
+     
+/*** 
+=============================================
+    Project grid filter  style
+=============================================
+***/    
+.project-grid-filter .single-project .content-holder {
+  padding: 20px 0 15px 10px;
+}    
+.project-grid-filter .single-project .content-holder h4 {
+  font-size: 16px;
+}
+
+/*** 
+=============================================
+    Project grid  style
+=============================================
+***/      
+.project-grid .single-project .img-holder .overlay .box .content h3 {
+  bottom: 10px;
+  font-size: 16px;
+}
+    
+/*** 
+=============================================
+    Project Single  style
+=============================================
+***/    
+.project-single .project-info {
+  margin-right: 0;
+}    
+.project-single .content-holder {
+  margin-top: 25px;
+  padding-left: 0;
+}
+
+.project-single .project-analysis .text-holder {
+  padding-left: 50px;
+}    
+.project-single .project-analysis .analysis-chart {
+  padding-left: 50px;
+}    
+    
+.project-single .project-planning .text-holder {
+  padding-left: 50px;
+}    
+.project-single .project-planning .project-planning-step {
+  padding-left: 50px;
+}    
+    
+.project-single .project-execution .text-holder {
+  padding-left: 50px;
+}
+.project-single .project-execution .perform {
+  padding-left: 50px;
+} 
+    
+.project-single .project-results .text-holder {
+  padding-left: 50px;
+}
+.project-single .project-results .project-results-chart {
+  padding-left: 50px;
+}    
+     
+/*** 
+=============================================
+    Service v1 area  style
+=============================================
+***/
+.services-v1-content #single-services-carousel {
+  padding: 40px 40px 70px 40px;
+}    
+.services-v1-content #single-services-carousel .single-carousel-service-item .img-holder, .services-v1-content #single-services-carousel .single-carousel-service-item .content-holder {
+  display: block;
+}    
+.services-v1-content #single-services-carousel .single-carousel-service-item .img-holder {
+  width: 100%;
+}    
+.services-v1-content #single-services-carousel .single-carousel-service-item .img-holder img {
+  width: 100%;
+}    
+.services-v1-content #single-services-carousel .single-carousel-service-item .content-holder {
+  padding-left: 0;
+}    
+.services-v1-content #single-services-carousel .carousel-indicators {
+  bottom: 15px;
+  left: 65px;
+}    
+    
+.provide-service-content {
+  margin-right: 0;
+}
+.other-service .video-gallery-box {
+  float: left !important;
+}    
+.global-wise-audits-chart {
+  margin-left: 0;
+}
+       
+/*** 
+=============================================
+    Service v2 area  style
+=============================================
+***/   
+.services-v2-content .business-planning .img-holder {
+  margin-right: 0;
+}    
+.services-v2-content .business-planning .img-holder img {
+  width: 100%;
+}    
+.services-v2-content .business-planning .content-holder {
+  margin-left: 0;
+  margin-top: 30px;
+}    
+
+.services-v2-content .business-planning-benefits {
+  padding-bottom: 60px;
+}    
+.services-v2-content .business-planning-benefits .content-holder {
+  margin-right: 0;
+}    
+.services-v2-content .business-planning-benefits .video-gallery-box {
+  float: left !important;
+  margin-left: 0;
+  margin-top: 35px;
+} 
+        
+/*** 
+=============================================
+    Service v3 area  style
+=============================================
+***/    
+.services-v3-content .single-service-carousel .img-holder {
+  float: none !important;
+}    
+.services-v3-content .single-service-carousel .img-holder img {
+  width: 100% !important;
+}    
+.services-v3-content .single-service-carousel .text-holder {
+  margin-left: 0;
+  padding: 60px 30px 70px;
+  position: relative;
+  z-index: -1;
+}    
+
+.profit-improvement-content .chart-holder {
+  margin-right: 0;
+}    
+.profit-improvement-content .text-holder {
+  margin-left: 0;
+  margin-top: 30px;
+}    
+    
+/*** 
+=============================================
+    Service v4 area  style
+=============================================
+***/     
+.service-carousel-content-v4 .inner-content .img-holder {
+  padding: 30px;
+  width: 100%;
+}   
+.service-carousel-content-v4 .inner-content .img-holder img{
+  width: 100%;        
+}    
+.service-carousel-content-v4 .inner-content .text-holder {
+  padding: 0 30px 30px;
+  width: 100%;
+}    
+.service-carousel-content-v4 .carousel-indicators {
+  width: 290px;
+}    
+     
+.services-v4-content .what-wedo-content-holder .video-gallery-box {
+  margin-right: 0;
+} 
+.services-v4-content .what-wedo-content-holder .video-gallery-box img {
+  width: 100%;
+}    
+.services-v4-content .what-wedo-content-holder .text-holder {
+  margin-left: 0;
+  margin-top: 30px;
+}    
+    
+.services-v4-content .research-analysis .text-holder {
+  margin-right: 0;
+}
+.services-v4-content .research-analysis .chart-holder {
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-top: 40px;
+}
+            
+.services-v4-content .strategy-development .single-strategy {
+  padding: 0 100px 20px;
+}
+    
+/*** 
+=============================================
+    Service v5 area  style
+=============================================
+***/    
+.services-v5-content .it-consulting-service .video-gallery-box {
+  margin-right: 0;
+}    
+.services-v5-content .it-consulting-service .video-gallery-box img {
+  width: 100%;
+} 
+.services-v5-content .it-consulting-service .text-holder {
+  margin-left: 0;
+  margin-top: 20px;
+}
+    
+/*** 
+=============================================
+    Service v6 area  style
+=============================================
+***/    
+.services-v6-content .srvice-capabilities-content .text-holder {
+  margin-right: 0;
+}    
+.services-v6-content .srvice-capabilities-content .img-holder {
+  margin-left: 0;
+  margin-top: 40px;
+}        
+.services-v6-content .srvice-capabilities-content .img-holder img {
+  width: 100%;
+}    
+    
+/*** 
+=============================================
+    Service v7 area  style
+=============================================
+***/    
+.services-v7-content .business-planning-benefits .content-holder {
+  margin-right: 0;
+}
+.services-v7-content .business-planning-benefits .chart-holder {
+  margin-left: 0;
+  margin-top: 40px;
+}    
+        
+/*** 
+=============================================
+   checkout area  style
+=============================================
+***/
+.checkout-area .form.shipping-info {
+  overflow: hidden;
+  padding-top: 50px;
+}    
+.checkout-area .table {
+  margin-bottom: 50px;
+}    
+    
+/*** 
+=============================================
+   Cart area  style
+=============================================
+***/ 
+.cart-middle .update-cart-pro-check {
+  float: left !important;
+  margin: 20px 0 0;
+}      
+.cart-bottom .calculate-shipping input.mar-bottom[type="text"] {
+  margin-bottom: 25px;
+}    
+.cart-bottom .calculate-shipping {
+  padding-bottom: 60px;
+}        
+       
+/*** 
+=============================================
+   Account area  style
+=============================================
+***/ 
+.account-area .register {
+  padding-top: 60px;
+}    
+      
+/*** 
+=============================================
+	testimonial-carousel area style
+=============================================
+***/ 
+.testimonial-carousel-area {
+  padding-bottom: 82px;
+  padding-top: 108px;
+}    
+.testimonial-carousel-area .bxslider li .single-item {
+  padding-bottom: 30px;
+}                
+.testimonial-carousel-area .bx-wrapper .bx-pager, 
+.testimonial-carousel-area .bx-wrapper .bx-controls-auto {
+  bottom: 98px;
+  position: absolute;
+  width: 100%;
+}
+    
+/*** 
+=============================================
+   Product Detail Area Style
+=============================================
+***/  
+.product-detail-area {
+  padding-bottom: 40px;
+}    
+.product-detail-area .product-detail-content .product-content-box .img-box {
+  margin-right: 0;
+}
+.product-detail-area .product-detail-content .product-content-box .content-box {
+  margin-left: 0;
+}
+.product-detail-area .product-detail-content .product-content-box .content-box .location-box form span {
+  display: block;
+  float: left !important;
+}
+.product-detail-area .product-detail-content .product-content-box .content-box .location-box .add-to-cart-box {
+  float: left;
+  margin: 10px 0 0;
+  overflow: hidden;
+}    
+    
+        
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+     
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+
+/*** 
+=============================================
+	Header search style
+=============================================
+***/      
+.header-search .search-form {
+  float: none !important;
+  margin: 0 auto;
+}    
+    
+/*** 
+=============================================
+	Header area style
+=============================================
+***/  
+.header-area .logo {
+  margin: 13px 0 20px;
+  text-align: center;
+}  
+.header-area .contact-info {
+  float: none !important;
+  position: static;
+}    
+.header-area .contact-info li {
+  display: block;
+  margin: 0 auto !important;
+  width: 220px;
+  margin-bottom: 15px !important;
+}
+.header-area .contact-info li.pdleft {
+  padding-left: 4px;
+}    
+.header-area .contact-info li a.request-quote {
+  top: 10px;
+  width: 200px;
+}
+    
+/*** 
+=============================================
+	Mainmenu Area style
+=============================================
+***/
+.mainmeu-area {
+  margin-bottom: 0;
+  margin-top: 0;
+}    
+.mainmeu-area .container {
+  padding-bottom: 40px !important;
+  padding-left: 15px;
+  padding-right: 20px;
+  position: relative;
+}  
+.social-links ul {
+  margin-left: 0;
+  margin-right: 10px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+.social-links ul li {
+  margin: 0 5px;
+  line-height: 30px;
+}    
+.search-button .toggle-search {
+  margin: 0px 0;
+}    
+.search-button .toggle-search button {
+  left: 160px;
+  position: absolute;
+  top: 16px;
+}
+ 
+    
+    
+.main-menu {
+  display: inline-block;
+  float: right !important;
+  padding-bottom: 0;
+  padding-top: 0;
+  z-index: 5;
+  width: 100%;
+}
+.main-menu .collapse {
+  border: 1px solid #ba0913;
+  border-radius: 3px;
+  float: none;
+  margin: 0;
+  max-height: 300px;
+  overflow: auto;
+  padding: 0 0 25px;
+  width: 100%;
+}  
+.main-menu .collapse.in, .main-menu .collapsing {
+  border: 0 solid #b68604;
+  border-radius: 0;
+  margin-top: 30px;
+}
+.main-menu .navbar-header {
+  display: block;
+  float: none;
+  padding: 0 0 0px;
+  position: relative;
+  right: 0px;
+  text-align: right;
+  width: 100%;
+  z-index: 12;
+}
+.main-menu .navbar-header .navbar-toggle {
+  background: #160f09 none repeat scroll 0 0;
+  border: 1px solid #160f09;
+  border-radius: 0;
+  display: inline-block;
+  float: none;
+  margin: 0;
+  top: 19px;
+  z-index: 7;
+} 
+.main-menu .navbar-header .navbar-toggle .icon-bar {
+  background: #e4985b none repeat scroll 0 0;
+  font-weight: 900;
+}
+.main-menu .navbar-collapse > .navigation{
+  float:none !important;
+  margin:0px !important;
+  width:100% !important;
+}
+.main-menu .navbar-collapse > .navigation > li{
+  margin:0px !important;
+  float:none !important;
+  width:100%;
+}
+   
+.main-menu .navigation > li > a:before{
+  background: none;        
+}	
+.main-menu .navigation li.dropdown > a:after{
+  display:none !important;
+}  
+.main-menu .navigation > li > ul > li > a::before {
+  content: "";
+}	
+.main-menu .navbar-collapse > .navigation > li > ul{
+    position:relative;
+    border:none;
+    float:none;
+    visibility:visible;
+    opacity:1;
+    display:none;
+    margin:0px;
+    left:auto !important;
+    right:auto !important;
+    top:auto !important;
+    width:100%;
+    background:#f9c740;
+    border-radius:0px;
+    -webkit-border-radius:0px;
+    -ms-border-radius:0px;
+    -o-border-radius:0px;
+    -moz-border-radius:0px;
+    transition:none !important;
+    -webkit-transition:none !important;
+    -ms-transition:none !important;
+    -o-transition:none !important;
+    -moz-transition:none !important;
+}		
+.main-menu .navbar-collapse > .navigation > li > ul{
+    border-top:1px solid rgba(255,255,255,1) !important;	
+}	
+.main-menu .navbar-collapse > .navigation > li,
+.main-menu .navbar-collapse > .navigation > li > ul > li{
+    border-top:1px solid rgba(255,255,255,1) !important;
+    opacity:1 !important;
+    top:0px !important;
+    left:0px !important;
+    visibility:visible !important;
+}
+.main-menu .navigation > li > ul > li {
+  border-bottom: none;
+}    
+.main-menu .navbar-collapse > .navigation > li:first-child{
+    border:none;	
+}   
+.main-menu .navbar-collapse > .navigation > li > a,
+.main-menu .navbar-collapse > .navigation > li > ul > li > a{
+  background: #160f09 none repeat scroll 0 0;
+  color: #fff !important;
+  line-height: 22px;
+  padding: 10px !important;
+  text-align: left;
+  font-weight: 700;
+}
+.main-menu .navigation > li > ul > li > a::before{
+  display: none;
+}		
+.main-menu .navbar-collapse > .navigation > li:hover > a,
+.main-menu .navbar-collapse > .navigation > li > ul > li:hover > a,
+.main-menu .navbar-collapse > .navigation > li.current > a{
+  background:#f39c57;
+  color:#160f09 !important;
+  box-shadow: 1px 0 1px #fff;
+}	
+.main-menu .navbar-collapse > .navigation li.dropdown .dropdown-btn{
+  display:block;
+}
+
+/*** 
+=============================================
+	call-to-action area style
+=============================================
+***/ 
+.call-to-action-area {
+  padding-bottom: 30px;
+  padding-top: 14px;
+}    
+.call-to-action-area .title {
+  float: none !important;
+  text-align: center;
+}
+.call-to-action-area .button {
+  float: none !important;
+}    
+.call-to-action-area .button a {
+  margin: 0 auto;
+}    
+.call-to-action-area .title h2 {
+  margin-bottom: 5px;
+}        
+    
+/*** 
+=============================================
+	welcome area style
+=============================================
+***/
+.welcome-area .video-box {
+  padding-top: 40px;
+}    
+.welcome-area .video-box img {
+  max-width: 100%;
+}    
+    
+/*** 
+=============================================
+	statistic area style
+=============================================
+***/
+.statistic-area {
+  padding-bottom: 60px;
+}    
+.statistic-area .single-statistic-item .content {
+  margin: 0 0 50px;
+}    
+     
+/*** 
+=============================================
+	Fact counter area style
+=============================================
+***/
+.fact-counter-area {
+  padding-bottom: 100px;
+} 
+.fact-counter-area .title h1 {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}    
+.single-fact-counter {
+  margin-bottom: 30px;
+}    
+    
+/*** 
+=============================================
+	caption area style
+=============================================
+***/    
+.caption-area .single-caption-carousel-item {
+  padding: 26px 20px 30px;
+}    
+    
+/*** 
+=============================================
+	how-work-and-faq area style
+=============================================
+***/  
+.how-we-work-content .content-and-video-gallery-holder .video-gallery, 
+.how-we-work-content .content-and-video-gallery-holder .content-holder {
+  display: block;
+}    
+.how-we-work-content .content-and-video-gallery-holder .video-gallery{
+  width: 100%;    
+}    
+.how-we-work-content .content-and-video-gallery-holder .video-gallery img {
+  width: 100%;
+}    
+.how-we-work-content .content-and-video-gallery-holder .video-gallery .overlay .box .content a img {
+  width: auto;
+} 
+.how-we-work-content .content-and-video-gallery-holder .content-holder {
+  padding-left: 0px;
+  padding-top: 30px;
+}    
+.how-work-and-faq-area .faq-content {
+  margin-top: 40px;
+}        
+    
+/*** 
+=============================================
+	latest-news-area style
+=============================================
+***/ 
+.latest-news-area {
+  padding-bottom: 40px;
+  padding-top: 90px;
+} 
+.latest-news-area .button  {
+  float: left !important;
+  margin-bottom: 30px;
+}        
+.single-blog-post .img-holder {
+  display: block;
+}    
+.latest-news-area .single-blog-post {
+  padding-bottom: 50px;
+}    
+
+/*** 
+=============================================
+	footer-area style
+=============================================
+***/
+.footer-area {
+  padding-bottom: 92px;
+  padding-top: 87px;
+}    
+.single-footer-widget.Statistic-pdbottom {
+  padding-bottom: 50px;
+  float: left;
+  overflow: hidden;
+}    
+.single-footer-widget.project-pdbottom {
+  overflow: hidden;
+  padding-bottom: 50px;
+} 
+.single-footer-widget.Subscribe-pdbottom {
+  padding-bottom: 50px;
+}    
+.single-footer-widget .contact-address .carousel-indicators {
+  left: 50px;
+  top: 300px;
+}    
+.single-footer-widget .footer-logo {
+  margin-top: 0px;
+  padding-bottom: 26px;
+} 
+    
+/*** 
+=============================================
+	footer-bottom area style
+=============================================
+***/     
+.footer-bottom-area .copyright-text p {
+  margin: 0 0 10px;
+  text-align: center;
+}    
+.footer-bottom-area .footer-menu {
+  float: none;
+  text-align: center;
+}
+.footer-bottom-area .footer-menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+   
+/*** 
+=============================================
+	About style
+=============================================
+***/
+#about {
+  padding-bottom: 40px;
+  padding-top: 90px;
+}       
+#about .content {
+  margin-top: 0px;
+  padding-top: 0;
+}    
+#about .content .about-tab .tab-content .item-list .single-item-list .content {
+  padding-left: 10px;
+  padding-top: 0;
+  margin-top: 0;
+}     
+#about .content .about-tab {
+  padding-left: 0;
+  position: static;
+}    
+#about .content .about-tab .tab-menu {
+  margin: 0 0 25px;
+  position: static;
+}    
+#about .content .about-tab .tab-content {
+  padding-left: 0px;
+}
+#about .growth-statistics .right {
+  float: left !important;
+  margin-top: 40px;
+}        
+#about .growth-statistics .right .about-page-fact-counter .single-fact-counter {
+  margin: 0;
+}
+.about-sidebar {
+  padding-top: 70px;
+}       
+    
+/*** 
+=============================================
+	Slogan Area style
+=============================================
+***/ 
+.slogan-area {
+  padding-bottom: 30px;
+  padding-top: 20px;
+}    
+.slogan-area .title{
+  float: none !important;
+  text-align: center;
+  display: block;
+}    
+.slogan-area .title h2 {
+  line-height: 40px !important;
+}
+.slogan-area .buttons {
+  display: block;
+  float: none !important;
+  margin: 15px auto 0;
+  width: 175px;
+}
+
+/*** 
+=============================================
+	Breadcrumb Bottom Area style
+=============================================
+***/   
+.breadcrumb-bottom-area .left {
+  float: none !important;
+  text-align: center;
+}    
+.breadcrumb-bottom-area .right {
+  float: none !important;
+  text-align: center;
+}    
+.breadcrumb-bottom-area .right ul li {
+  margin: 0 3px;
+}    
+
+/*** 
+=============================================
+	Company History Area style
+=============================================
+***/ 
+.company-history-area {
+  padding-bottom: 40px;
+  padding-top: 90px;
+}      
+.company-history-area .content .img-holder-items .single-img-holder-item {
+  width: 100%;
+  margin-bottom: 4px;
+}    
+ 
+/*** 
+=============================================
+	Our Team Area style
+=============================================
+***/ 
+.our-team-area {
+  padding-bottom: 55px;
+  padding-top: 90px;
+}    
+.our-team-area .team-member {
+  padding-top: 40px;
+}        
+    
+/*** 
+=============================================
+	Single Team Area style
+=============================================
+***/     
+.team-member-details .img-holder img {
+  width: 100%;  
+}    
+.team-member-details .text {
+  padding-top: 35px;
+}    
+#team-page-google-map {
+  height: 470px;
+}    
+.contact-details .overlay {
+  width: 280px;
+}
+
+/*** 
+=============================================
+	Our Partner Area style
+=============================================
+***/     
+.our-partner-area .partner-single-item .partner-logo {
+  text-align: center;
+}    
+.our-partner-area .partner-single-item {
+  margin-bottom: 35px;
+}    
+        
+/*** 
+=============================================
+    Faq content Area style
+=============================================
+***/      
+.faq-content-area .faq-content-holder .top .search-question {
+  float: left !important;
+  margin: 0 0 20px;
+}    
+.faq-content-area .faq-content-holder .top .search-question .search-question-form input[type="text"] {
+  width: 290px;
+}   
+        
+/*** 
+=============================================
+    career Area style
+=============================================
+***/       
+.career-area .career-content .img-holder .overlay .box .content h1 {
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0 0 10px;
+}    
+    
+/*** 
+=============================================
+	Career single Area style
+=============================================
+***/    
+.career-single-area {
+  padding-bottom: 40px;
+  padding-top: 90px;
+}    
+.career-single-area .career-single .job-summary .job-summary-list ul {
+  margin: 0 25px 0 0;
+} 
+.career-single-area .career-single .apply-now .apply-form {
+  padding: 20px;
+}     
+.career-single-area .career-single .apply-now .apply-form input.linkedin {
+  width: 80%;
+}
+.career-single-area .career-single .apply-now .apply-form .upload-file {
+  font-size: 14px;
+  line-height: 30px;
+  margin-right: 30px;
+}   
+.career-single-area .career-single .apply-now .apply-form .button {
+  float: left !important;
+}
+
+/*** 
+=============================================
+	Blog list style
+=============================================
+***/    
+.blog-list .blog-post .single-blog-post .title {
+  margin: 15px 0 0;
+}    
+ 
+/*** 
+=============================================
+	Blog with sidebar style
+=============================================
+***/    
+.sidebar-wrapper {
+  margin-top: 70px;
+} 
+    
+/*** 
+=============================================
+	blog detail style
+=============================================
+***/   
+.blog-detail .blog-post .author-box .inner-content {
+  padding-bottom: 32px;
+  padding-left: 15px !important;
+  padding-right: 15px;
+  padding-top: 40px;
+  position: static;
+}    
+.blog-detail .blog-post .author-box .inner-content .img-holder {
+  position: static;
+} 
+.blog-detail .blog-post .author-box .inner-content .text-holder {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 15px;
+} 
+.blog-detail .blog-post .comment-box .inner-content {
+  padding-left: 0;
+  position: static;
+} 
+.blog-detail .blog-post .comment-box .inner-content .img-holder {
+  position: static;
+}       
+.blog-detail .blog-post .comment-box .inner-content .text-holder {
+  padding-left: 0;
+  padding-top: 15px;
+}      
+.blog-detail .blog-post .reply-box .reply-form button {
+  margin-top: 26px;
+}  
+    
+/*** 
+=============================================
+	Branch area style
+=============================================
+***/     
+.branch-area .branch-title {
+  float: none !important;
+  text-align: center;
+}
+.branch-area .branch-title h3 {
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0 0 10px;
+}    
+.branch-area .select-field {
+  float: none !important;
+}    
+.branch-area .select-field select {
+  margin: 0 auto;
+}  
+ 
+/*** 
+=============================================
+	google map area style
+=============================================
+***/      
+.google-map-area .overlay {
+  left: -10px;
+  width: 285px;
+}    
+
+/*** 
+=============================================
+	contact form area style
+=============================================
+***/      
+.contact-form-area {
+  padding-bottom: 90px;
+  padding-top: 100px;
+}    
+
+/*** 
+=============================================
+    Project Gallery  style
+=============================================
+***/
+.project-filter {
+  margin-bottom: 40px;
+}    
+.project-filter li {
+  margin: 0 3.5px 10px;
+}    
+.project-filter li span {
+  padding: 9px 10px;
+}    
+.single-project.span-3 {
+  width: 100%;
+}     
+    
+/*** 
+=============================================
+    Project Single  style
+=============================================
+***/    
+.project-single .project-info {
+  margin-right: 0;
+}    
+.project-single .content-holder {
+  margin-top: 25px;
+  padding-left: 0;
+}
+    
+.project-single .project-analysis .text-holder {
+  padding-left: 0px;
+}    
+.project-single .project-analysis .analysis-chart {
+  padding-left: 0px;
+}    
+    
+.project-single .project-planning .text-holder {
+  padding-left: 0px;
+}    
+.project-single .project-planning .project-planning-step {
+  padding-left: 0px;
+}    
+    
+.project-single .project-execution .text-holder {
+  padding-left: 0px;
+}
+.project-single .project-execution .perform {
+  padding-left: 0px;
+} 
+    
+.project-single .project-results .text-holder {
+  padding-left: 0px;
+}
+.project-single .project-results .project-results-chart {
+  padding-left: 0px;
+}    
+         
+.project-single .project-execution .perform .perform-list {
+  padding-left: 0;
+  position: static;
+}    
+.project-single .project-execution .perform .perform-list .img-holder {
+  position: static;
+}    
+.project-single .project-execution .perform .perform-list .text {
+  padding-left: 0;
+  padding-top: 20px;
+}    
+    
+/*** 
+=============================================
+    Service v1 area  style
+=============================================
+***/
+.services-v1-content #single-services-carousel {
+  padding: 20px 20px 70px 20px;
+}    
+.services-v1-content #single-services-carousel .single-carousel-service-item .img-holder, .services-v1-content #single-services-carousel .single-carousel-service-item .content-holder {
+  display: block;
+}    
+.services-v1-content #single-services-carousel .single-carousel-service-item .img-holder {
+  width: 100%;
+}    
+.services-v1-content #single-services-carousel .single-carousel-service-item .img-holder img {
+  width: 100%;
+}    
+.services-v1-content #single-services-carousel .single-carousel-service-item .content-holder {
+  padding-left: 0;
+}    
+.services-v1-content #single-services-carousel .carousel-indicators {
+  bottom: 15px;
+  left: 65px;
+}    
+    
+.provide-service-content {
+  margin-right: 0;
+}
+.other-service .video-gallery-box {
+  float: left !important;
+}    
+.global-wise-audits-chart {
+  margin-left: 0;
+}
+.single-service-tab-content .tab-menu li a {
+  padding: 7px 15px;
+}       
+         
+/*** 
+=============================================
+    Service v2 area  style
+=============================================
+***/   
+.services-v2-content .business-planning .img-holder {
+  margin-right: 0;
+}    
+.services-v2-content .business-planning .img-holder img {
+  width: 100%;
+}    
+.services-v2-content .business-planning .content-holder {
+  margin-left: 0;
+  margin-top: 30px;
+}    
+
+.services-v2-content .business-planning-benefits {
+  padding-bottom: 60px;
+}    
+.services-v2-content .business-planning-benefits .content-holder {
+  margin-right: 0;
+}    
+.services-v2-content .business-planning-benefits .video-gallery-box {
+  float: left !important;
+  margin-left: 0;
+  margin-top: 35px;
+} 
+    
+/*** 
+=============================================
+    Service v3 area  style
+=============================================
+***/    
+.services-v3-content .single-service-carousel .img-holder {
+  float: none !important;
+}    
+.services-v3-content .single-service-carousel .img-holder img {
+  width: 100% !important;
+}    
+.services-v3-content .single-service-carousel .text-holder {
+  margin-left: 0;
+  padding: 60px 30px 70px;
+  position: relative;
+  z-index: -1;
+}    
+
+.profit-improvement-content .chart-holder {
+  margin-right: 0;
+}    
+.profit-improvement-content .text-holder {
+  margin-left: 0;
+  margin-top: 30px;
+}    
+        
+/*** 
+=============================================
+    Service v4 area  style
+=============================================
+***/     
+.service-carousel-content-v4 .inner-content .img-holder {
+  padding: 30px;
+  width: 100%;
+}   
+.service-carousel-content-v4 .inner-content .img-holder img{
+  width: 100%;        
+}    
+.service-carousel-content-v4 .inner-content .text-holder {
+  padding: 0 30px 30px;
+  width: 100%;
+}      
+.service-carousel-content-v4 .carousel-indicators {
+  bottom: 20px;
+  left: 0;
+  list-style: outside none none;
+  margin-left: 0;
+  padding-left: 0;
+  position: absolute;
+  text-align: center;
+  width: 470px;
+}     
+    
+.services-v4-content .what-wedo-content-holder .video-gallery-box {
+  margin-right: 0;
+} 
+.services-v4-content .what-wedo-content-holder .video-gallery-box img {
+  width: 100%;
+}    
+.services-v4-content .what-wedo-content-holder .text-holder {
+  margin-left: 0;
+  margin-top: 30px;
+}    
+    
+.services-v4-content .research-analysis .text-holder {
+  margin-right: 0;
+}
+.services-v4-content .research-analysis .chart-holder {
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-top: 40px;
+}
+            
+.services-v4-content .strategy-development .single-strategy {
+  padding: 0 0px 20px;
+}    
+    
+/*** 
+=============================================
+    Service v5 area  style
+=============================================
+***/    
+.services-v5-content .it-consulting-service .video-gallery-box {
+  margin-right: 0;
+}    
+.services-v5-content .it-consulting-service .video-gallery-box img {
+  width: 100%;
+} 
+.services-v5-content .it-consulting-service .text-holder {
+  margin-left: 0;
+  margin-top: 20px;
+}
+        
+/*** 
+=============================================
+    Service v6 area  style
+=============================================
+***/    
+.services-v6-content .srvice-capabilities-content .text-holder {
+  margin-right: 0;
+}    
+.services-v6-content .srvice-capabilities-content .img-holder {
+  margin-left: 0;
+  margin-top: 40px;
+}        
+.services-v6-content .srvice-capabilities-content .img-holder img {
+  width: 100%;
+}    
+    
+/*** 
+=============================================
+    Service v7 area  style
+=============================================
+***/    
+.services-v7-content .business-planning-benefits .content-holder {
+  margin-right: 0;
+}
+.services-v7-content .business-planning-benefits .chart-holder {
+  margin-left: 0;
+  margin-top: 40px;
+}    
+        
+/*** 
+=============================================
+   checkout area  style
+=============================================
+***/
+.checkout-area .form.shipping-info {
+  overflow: hidden;
+  padding-top: 50px;
+}    
+.checkout-area .table {
+  margin-bottom: 50px;
+}    
+    
+/*** 
+=============================================
+   Cart area  style
+=============================================
+***/ 
+.cart-middle .apply-coupon {
+  padding-left: 0;
+  position: static;
+}    
+.cart-middle .apply-coupon input[type="text"] {
+  position: static;
+  width: 100%;
+  margin-bottom: 10px;
+}      
+.cart-middle .update-cart-pro-check {
+  float: left !important;
+  margin-top: 10px;
+}
+.cart-middle .update-cart-pro-check button {
+  margin-left: 20px;
+  margin-right: 0;
+  margin-top: 10px;
+}    
+.cart-middle .update-cart-pro-check a {
+  float: left;
+  margin-top: 10px;
+}     
+.cart-bottom .calculate-shipping {
+  padding-bottom: 60px;
+}    
+    
+/*** 
+=============================================
+   Account area  style
+=============================================
+***/ 
+.account-area .register {
+  padding-top: 60px;
+}    
+        
+/*** 
+=============================================
+	testimonial-carousel area style
+=============================================
+***/ 
+.testimonial-carousel-area {
+  padding-bottom: 82px;
+  padding-top: 108px;
+}    
+.testimonial-carousel-area .bxslider li .single-item {
+  padding-bottom: 30px;
+}                
+.testimonial-carousel-area .bx-wrapper .bx-pager, 
+.testimonial-carousel-area .bx-wrapper .bx-controls-auto {
+  bottom: 98px;
+  position: absolute;
+  width: 100%;
+}
+        
+/*** 
+=============================================
+   Product Detail Area Style
+=============================================
+***/ 
+.product-detail-area {
+  padding-bottom: 40px;
+  padding-top: 90px;
+}    
+.product-detail-area .product-detail-content .product-content-box .img-box {
+  margin-right: 0;
+}
+.product-detail-area .product-detail-content .product-content-box .img-box img {
+  width: 100%;
+}    
+.product-detail-area .product-detail-content .product-content-box .content-box {
+  margin-left: 0;
+  margin-top: 25px;
+}
+.product-detail-area .product-detail-content .product-content-box .content-box .location-box .add-to-cart-box {
+  float: left;
+  margin: 10px 0 0;
+  overflow: hidden;
+}    
+.product-detail-area .product-detail-content .related-product-box .top .more-product a {
+  position: relative;
+  top: -3px;
+} 
+    
+    
+  
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+        
+    
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    
+ 
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+       
+}
+
+

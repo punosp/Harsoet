@@ -1,0 +1,87 @@
+<!-- Content Wrapper. Contains page content -->
+ <div class="content-wrapper">
+   <!-- Content Header (Page header) -->
+   <section class="content-header">
+     <h1>
+       Company
+       <small>Details</small>
+     </h1>
+
+   </section>
+
+   <!-- Main content -->
+   <section class="content">
+     <div class="row">
+       <div class="col-md-12">
+         <form role="form" method="post" action="/admin/aboutCompanyAdd">
+         <div class="box box-info">
+           <div class="box-header">
+             <h3 class="box-title">About
+             </h3>
+             <!-- tools box -->
+             <div class="pull-right box-tools">
+               <button type="button" class="btn btn-info btn-sm" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                 <i class="fa fa-minus"></i></button>
+
+             </div>
+             <!-- /. tools -->
+           </div>
+           <!-- /.box-header -->
+           <div class="box-body pad">
+                   <textarea id="editor1" name="about" rows="10" cols="80">
+                                           {{#if record}}{{{record.0.about}}}{{/if}}
+                   </textarea>
+           </div>
+         </div>
+         <!-- /.box -->
+         <div class="box box-info">
+           <div class="box-header">
+             <h3 class="box-title">History
+             </h3>
+             <!-- tools box -->
+             <div class="pull-right box-tools">
+               <button type="button" class="btn btn-info btn-sm" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                 <i class="fa fa-minus"></i></button>
+
+             </div>
+             <!-- /. tools -->
+           </div>
+           <!-- /.box-header -->
+           <div class="box-body pad">
+                   <textarea id="editor2" name="history" rows="10" cols="80">
+                                           {{#if record}}{{{record.0.history}}}{{/if}}
+                   </textarea>
+           </div>
+         </div>
+         <div class="box">
+           <div class="box-header">
+             <h3 class="box-title">Structure
+             </h3>
+             <!-- /. tools -->
+           </div>
+           <!-- /.box-header -->
+           <div class="box-body pad">
+
+                <div class="form-group">
+                  <label for="NoOfConsultants">No of consultants</label>
+                  <input type="number" class="form-control" {{#if record}}value="{{record.0.consultantsNo}}"{{/if}} id="NoOfConsultents" placeholder="Enter no." name="NoOfConsultents">
+                </div>
+                <div class="form-group">
+                  <label for="NoOfServicesProvided">No of services provided</label>
+                  <input type="number" class="form-control" {{#if record}}value="{{record.0.ServicesNo}}"{{/if}} id="NoOfServicesProvided" placeholder="Enter no." name="NoOfServicesProvided">
+                </div>
+
+           </div>
+         </div>
+         <div class="box-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+         </form>
+       </div>
+       <!-- /.col-->
+     </div>
+     <!-- ./row -->
+   </section>
+   <!-- /.content -->
+ </div>
+ <!-- /.content-wrapper -->
