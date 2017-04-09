@@ -36,10 +36,8 @@ function getHostName() {
   // console.log('Hostname:',process.env.NODE_ENV)
   if(process.env.NODE_ENV === 'development') {
     return "http://localhost:1337"
-  } else if(process.env.NODE_ENV === 'staging') {
-    return "http://46.137.213.164:8092"
   } else if(process.env.NODE_ENV === 'production') {
-    return "http://46.137.213.164:8092"
+    return "http://35.154.231.94:1337"
   }
   else{
     return "http://localhost:1337";
