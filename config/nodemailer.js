@@ -3,8 +3,7 @@
 'use strict';
 var nodemailer = require('nodemailer'),
   SENDER_EMAIL = 'kumararyanshuxxx@gmail.com',
-  SENDER_PASSWORD = 'aryan@94';
-
+  SENDER_PASSWORD = '';
 
 
 module.exports.mailer = {

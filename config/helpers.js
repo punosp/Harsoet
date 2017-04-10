@@ -1,7 +1,18 @@
 'use strict';
 
+<<<<<<< HEAD
 var Handlebars = require('handlebars');
 //var Handlebars = require('sails/node_modules/handlebars');
+=======
+//var Handlebars = require('handlebars');
+if (process.env.NODE_ENV === 'production') {
+  var Handlebars = require('handlebars');
+}
+else {
+  var Handlebars = require('sails/node_modules/handlebars');
+}
+
+>>>>>>> 730f6a56156c923b86fcd2b1e7a0064cf186c65e
 var layouts = require('handlebars-layouts');
 
 layouts.register(Handlebars);
