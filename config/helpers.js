@@ -1,7 +1,7 @@
 'use strict';
 
-//var Handlebars = require('handlebars');
-var Handlebars = require('sails/node_modules/handlebars');
+var Handlebars = require('handlebars');
+//var Handlebars = require('sails/node_modules/handlebars');
 var layouts = require('handlebars-layouts');
 
 layouts.register(Handlebars);
