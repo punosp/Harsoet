@@ -31,7 +31,7 @@
                    </div>
                {{/if}}
      <h1>
-       News
+       FAQ's
      </h1>
 
    </section>
@@ -40,11 +40,10 @@
    <section class="content">
      <div class="row">
        <div class="col-md-12">
-         <form role="form" method="post" action="/admin/addCompanyNews" enctype="multipart/form-data">
-
+         <form role="form" method="post" action="/admin/faqs/{{faqs.id}}/update">
          <div class="box box-info">
            <div class="box-header">
-             <h3 class="box-title">Heading
+             <h3 class="box-title">Question
              </h3>
              <!-- tools box -->
              <div class="pull-right box-tools">
@@ -56,15 +55,15 @@
            </div>
            <!-- /.box-header -->
            <div class="box-body pad">
-                   <textarea id="editor1" name="heading" rows="10" cols="80">
-                                           This is my textarea to be replaced with CKEditor.
+                   <textarea id="editor1" name="question" rows="10" cols="80">
+                                           {{faqs.question}}
                    </textarea>
            </div>
          </div>
          <!-- /.box -->
          <div class="box box-info">
            <div class="box-header">
-             <h3 class="box-title">Description
+             <h3 class="box-title">Answer
              </h3>
              <!-- tools box -->
              <div class="pull-right box-tools">
@@ -77,35 +76,14 @@
            <!-- /.box-header -->
            <div class="box-body pad">
 
-                   <textarea id="editor2" name="description" rows="10" cols="80">
-                                           This is my textarea to be replaced with CKEditor.
+                   <textarea id="editor2" name="answer" rows="10" cols="80">
+                                           {{faqs.answer}}
                    </textarea>
 
            </div>
          </div>
-         <div class="box box-info">
-           <div class="box-header">
-             <h3 class="box-title">Image for news
-             </h3>
-             <!-- tools box -->
-             <div class="pull-right box-tools">
-               <button type="button" class="btn btn-info btn-sm" data-widget="collapse" data-toggle="tooltip" title="Collapse">
-                 <i class="fa fa-minus"></i></button>
-
-             </div>
-             <!-- /. tools -->
-           </div>
-           <!-- /.box-header -->
-           <div class="box-body pad">
-
-             <label for="newsPic">Select Picture</label>
-            <input type="file" id="newsPic" name="pic">
-            <p class="help-block">.jpg,jpeg,png etc. allowed</p>
-
-           </div>
-         </div>
          <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Add</button>
+                <button type="submit" class="btn btn-primary">Update</button>
               </div>
          </form>
        </div>

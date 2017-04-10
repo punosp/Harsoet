@@ -16,6 +16,7 @@ module.exports = form(
   field('email'),
   field('from'),
   field('to'),
+  field('status'),
   validate('address')
     .required("", "ADDRESS_REQUIRED"),
   validate('pin')
@@ -35,5 +36,7 @@ module.exports = form(
   validate('from')
     .required("", "FROM_REQUIRED"),
   validate('to')
-    .required("", "TO_REQUIRED")
+    .required("", "TO_REQUIRED"),
+  validate('status')
+    .required("", "STATUS_REQUIRED")
 );

@@ -140,7 +140,8 @@ var mappings = {
   COMPANY_PHONE_REQUIRED: 'Please enter phone no',
   COMPANY_EMAIL_REQUIRED: 'Please enter email id',
   FROM_REQUIRED: 'Please select starting time',
-  TO_REQUIRED: 'Please select closing time'
+  TO_REQUIRED: 'Please select closing time',
+  STATUS_REQUIRED: 'Please select type of address'
 
 };
 

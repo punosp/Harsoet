@@ -1,58 +1,94 @@
-<!-- Content Wrapper. Contains page content -->
- <div class="content-wrapper">
-   <!-- Content Header (Page header) -->
-   <section class="content-header">
-     <h1>
-       Team member
-       <small>Add</small>
-     </h1>
 
-   </section>
+    <!-- Content Wrapper. Contains page content -->
+     <div class="content-wrapper">
+       <!-- Content Header (Page header) -->
+       <section class="content-header">
+         {{#if message}}
+                       <div class="alert alert-success" role="alert">
+                         {{#each message}}
 
-   <!-- Main content -->
-   <section class="content">
-     <div class="row">
-       <div class="col-md-12">
-         <form role="form" method="post" action="">
-           <div class="box">
-             <div class="box-header">
-               <h3 class="box-title">Structure
-               </h3>
-               <!-- /. tools -->
+                             <p>{{this}}</p>
+
+                         {{/each}}
+                       </div>
+                   {{/if}}
+
+                   {{#if errors}}
+                       <div class="alert alert-danger" role="alert">
+                         {{#each errors}}
+
+                             <p>{{this}}</p>
+
+                         {{/each}}
+                       </div>
+                   {{/if}}
+                   {{#if alert}}
+                       <div class="alert alert-info" role="alert">
+                         {{#each alert}}
+
+                           <p>{{this}}</p>
+
+                         {{/each}}
+                       </div>
+                   {{/if}}
+         <h1>
+           Team
+           &nbsp;&nbsp;<a href="/admin/teamAdd" class="btn btn-primary btn-md"> Add </a>
+         </h1>
+
+       </section>
+
+       <!-- Main content -->
+       <section class="content">
+         {{#each team}}
+         <div class="row">
+
+           <div class="col-md-3"></div>
+           <div class="col-md-6">
+               <!-- /.box-header -->
+               <!-- form start -->
+
+               <div class="box box-primary collapsed-box">
+                 <div class="box-header">
+
+                   <h3 class="box-title"><b>Name : </b>&nbsp;&nbsp; {{{this.name}}}
+                   </h3>
+                   <!-- tools box -->
+                   <div class="pull-right box-tools">
+                     <button type="button" class="btn btn-info btn-sm" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                       <i class="fa fa-plus"></i></button>
+
+                   </div>
+                   <br>
+                   <br>
+                   <div>
+                     <a href="/admin/team/{{this.id}}/edit" class="btn btn-warning pull-right"> Edit </a>
+                     <a href="/admin/team/{{this.id}}/delete" class="btn btn-danger pull-right" style="margin-right: 10px"> Delete </a>
+                   </div>
+
+                   <!-- /. tools -->
+                 </div>
+                 <!-- /.box-header -->
+                 <div class="box-body pad">
+                   <img class="lazy" data-original="/images/{{this.imageName}}" alt="upload" style="width:100px;height:100px;">
+                   <br>
+                   <br>
+                   <p><b>Post : </b></p> <p>{{this.post}}</p>
+                   <p><b>Intro : </b>&nbsp;&nbsp; </p>{{{this.intro}}}
+                 </div>
+               </div>
+
+
              </div>
-             <!-- /.box-header -->
-             <div class="box-body pad">
 
-                  <div class="form-group">
-                    <label for="NoOfConsultants">No of consultants</label>
-                    <input type="number" class="form-control" id="NoOfConsultents" placeholder="Enter no." name="NoOfConsultents">
-                  </div>
-                  <div class="form-group">
-                    <label for="NoOfServicesProvided">No of services provided</label>
-                    <input type="number" class="form-control" id="NoOfServicesProvided" placeholder="Enter no." name="NoOfServicesProvided">
-                  </div>
-                  <div class="form-group">
-                    <label for="NoOfServicesProvided">No of services provided</label>
-                  <textarea id="editor1" name="editor1" rows="10" cols="80">
-                                          This is my textarea to be replaced with CKEditor.
-                  </textarea>
-                </div>
+           <!-- /.col-->
 
-             </div>
-           </div>
+         <div class="col-md-3"></div>
+         <!-- ./row -->
 
-         <!-- /.box -->
-
-
-         <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </div>
-         </form>
        </div>
-       <!-- /.col-->
-     </div>
-     <!-- ./row -->
-   </section>
-   <!-- /.content -->
- </div>
- <!-- /.content-wrapper -->
+{{/each}}
+       </section>
+       <!-- /.content -->
+</div>
+     <!-- /.content-wrapper -->

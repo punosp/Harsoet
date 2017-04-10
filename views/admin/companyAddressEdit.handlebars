@@ -47,35 +47,35 @@
                </div>
                <!-- /.box-header -->
                <!-- form start -->
-               <form role="form" method="post" action="/admin/addCompanyAddress">
+               <form role="form" method="post" action="/admin/address/{{address.id}}/update">
                  <div class="box-body">
                    <div class="form-group">
                      <label for="address">Address</label>
-                     <input type="text" class="form-control" id="address" placeholder="Enter address" name="address" required>
+                     <input type="text" value="{{address.address}}" class="form-control" id="address" placeholder="Enter address" name="address" required>
                    </div>
                    <div class="form-group">
                      <label for="pin">Pin Code</label>
-                     <input type="text" class="form-control" id="pin" placeholder="Enter pin" name="pin" required>
+                     <input type="text" value="{{address.pin}}" class="form-control" id="pin" placeholder="Enter pin" name="pin" required>
                    </div>
                    <div class="form-group">
                      <label for="city">City</label>
-                     <input type="text" class="form-control" id="city" placeholder="Enter city" name="city" required>
+                     <input type="text" value="{{address.city}}" class="form-control" id="city" placeholder="Enter city" name="city" required>
                    </div>
                    <div class="form-group">
                      <label for="state">State</label>
-                     <input type="text" class="form-control" id="state" placeholder="Enter state" name="state" required>
+                     <input type="text" value="{{address.state}}" class="form-control" id="state" placeholder="Enter state" name="state" required>
                    </div>
                    <div class="form-group">
                      <label for="country">Country</label>
-                     <input type="text" class="form-control" id="country" placeholder="Enter country" name="country" required>
+                     <input type="text" value="{{address.country}}" class="form-control" id="country" placeholder="Enter country" name="country" required>
                    </div>
                    <div class="form-group">
                      <label for="Phone no.">Phone no.</label>
-                     <input type="number" class="form-control" id="phone" placeholder="Enter phone no." name="phone" required>
+                     <input type="number" value="{{address.phone}}" class="form-control" id="phone" placeholder="Enter phone no." name="phone" required>
                    </div>
                    <div class="form-group">
                      <label for="email">Email address</label>
-                     <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                     <input type="email" value="{{address.email}}" class="form-control" id="email" placeholder="Enter email" name="email" required>
                    </div>
                    <div class="bootstrap-timepicker">
                      <label>TIme picker:</label>
@@ -83,7 +83,7 @@
                      <label>From</label>
 
                      <div class="input-group" id="timing">
-                       <input type="text" class="form-control timepicker" name="from" required>
+                       <input type="text" value="{{address.from}}" class="form-control timepicker" name="from" required>
 
                        <div class="input-group-addon">
                          <i class="fa fa-clock-o"></i>
@@ -95,7 +95,7 @@
                      <label>To</label>
 
                      <div class="input-group">
-                       <input type="text" class="form-control timepicker" name="to" required>
+                       <input type="text" value="{{address.to}}" class="form-control timepicker" name="to" required>
 
                        <div class="input-group-addon">
                          <i class="fa fa-clock-o"></i>
@@ -106,8 +106,8 @@
                    <div class="form-group">
                      <label>Type</label>
                     <select class="form-control" id="status" name="status" required required>
-                        <option value="1">Primary</option>
-                        <option value="0" selected value>Secondary</option>
+                        <option value="1" {{#ifCond address.status 1}}selected value{{/ifCond}}>Primary</option>
+                        <option value="0" {{#ifCond address.status 0}}selected value{{/ifCond}}>Secondary</option>
 
                     </select>
                     <br>
@@ -119,7 +119,7 @@
                  <!-- /.box-body -->
 
                  <div class="box-footer">
-                   <button type="submit" class="btn btn-primary">Add</button>
+                   <button type="submit" class="btn btn-primary">Update</button>
                  </div>
                </form>
              </div>

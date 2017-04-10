@@ -32,7 +32,7 @@
                {{/if}}
      <h1>
        Team member
-       <small>Add</small>
+       <small>Edit</small>
      </h1>
 
    </section>
@@ -41,7 +41,7 @@
    <section class="content">
      <div class="row">
        <div class="col-md-12">
-         <form role="form" method="post" action="/admin/addTeamMember" enctype="multipart/form-data">
+         <form role="form" method="post" action="/admin/team/{{team.id}}/update" enctype="multipart/form-data">
            <div class="box">
              <div class="box-header">
                <h3 class="box-title">Structure
@@ -53,21 +53,18 @@
 
                   <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+                    <input type="text" value="{{team.name}}" class="form-control" id="name" placeholder="Enter name" name="name">
                   </div>
                   <div class="form-group">
                     <label for="position">Position</label>
-                    <input type="text" class="form-control" id="position" placeholder="Enter position" name="position">
+                    <input type="text" value="{{team.post}}" class="form-control" id="position" placeholder="Enter position" name="position">
                   </div>
                   <div class="form-group">
                     <label for="description">Description</label>
                   <textarea id="description" name="description" rows="10" cols="80">
-                                          This is my textarea to be replaced with CKEditor.
+                                          {{team.intro}}
                   </textarea>
                 </div>
-                <label for="employeePic">Select Picture</label>
-               <input type="file" id="employeePic" name="pic">
-               <p class="help-block">.jpg,jpeg,png etc. allowed</p>
 
              </div>
            </div>
@@ -76,7 +73,7 @@
 
 
          <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Update</button>
               </div>
          </form>
        </div>

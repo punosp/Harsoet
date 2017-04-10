@@ -32,15 +32,15 @@
                        </div>
                    {{/if}}
          <h1>
-           News & Updates
-           &nbsp;&nbsp;<a href="/admin/companyNewsAdd" class="btn btn-primary btn-md"> Add </a>
+           Addresses
+           &nbsp;&nbsp;<a href="/admin/companyAddressAdd" class="btn btn-primary btn-md"> Add </a>
          </h1>
 
        </section>
 
        <!-- Main content -->
        <section class="content">
-         {{#each news}}
+         {{#each address}}
          <div class="row">
 
            <div class="col-md-3"></div>
@@ -51,7 +51,7 @@
                <div class="box box-primary collapsed-box">
                  <div class="box-header">
 
-                   <h3 class="box-title" ><b> Heading : </b>&nbsp;&nbsp; {{{this.heading}}}
+                   <h3 class="box-title">Address {{counter @index}}
                    </h3>
                    <!-- tools box -->
                    <div class="pull-right box-tools">
@@ -61,19 +61,73 @@
                    </div>
                    <br>
                    <br>
-                   <div>
-                     <a href="/admin/news/{{this.id}}/edit" class="btn btn-warning pull-right"> Edit </a>
-                     <a href="/admin/news/{{this.id}}/delete" class="btn btn-danger pull-right" style="margin-right: 10px"> Delete </a>
+                   <div><b>Type</b> &nbsp;&nbsp;&nbsp;{{#ifCond this.status 1}}Primary{{else}}Secondary{{/ifCond}}
+                     <a href="/admin/address/{{this.id}}/edit" class="btn btn-warning pull-right"> Edit </a>
+                     <a href="/admin/address/{{this.id}}/delete" class="btn btn-danger pull-right" style="margin-right: 10px"> Delete </a>
                    </div>
 
                    <!-- /. tools -->
                  </div>
                  <!-- /.box-header -->
                  <div class="box-body pad">
-                   <img class="lazy" data-original="/images/{{this.imageName}}" alt="upload" style="width:100px;height:100px;">
-                   <br>
-                   <br>
-                   <p><b>Description : </b></p> <p>{{{this.description}}}</p>
+                   <table class='table table-striped'>
+                     <tr>
+
+                       <th>Address</th>
+                       <td>{{this.address}}</td>
+
+                     </tr>
+                     <tr>
+
+                       <th>Pin Code</th>
+                       <td>{{this.pin}}</td>
+
+                     </tr>
+                     <tr>
+
+                       <th>City</th>
+                       <td>{{this.city}}</td>
+
+                     </tr>
+                     <tr>
+
+                       <th>State</th>
+                       <td>{{this.state}}</td>
+
+                     </tr>
+                     <tr>
+
+                       <th>Country</th>
+                       <td>{{this.country}}</td>
+
+                     </tr>
+                     <tr>
+
+                       <th>Phone</th>
+                       <td>{{this.phone}}</td>
+
+                     </tr>
+                     <tr>
+
+                       <th>Email</th>
+                       <td>{{this.email}}</td>
+
+                     </tr>
+                     <tr>
+
+                       <th>From</th>
+                       <td>{{this.from}}</td>
+
+                     </tr>
+                     <tr>
+
+                       <th>To</th>
+                       <td>{{this.to}}</td>
+
+                     </tr>
+
+
+                   </table>
                  </div>
                </div>
 

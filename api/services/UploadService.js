@@ -23,7 +23,7 @@ function uploadPic(req) {
           saveAs: id+"."+extension,
           dirname: '../../assets/images/'
       }, function (error, files) {
-    return error ? reject(error) : resolve(id);
+    return error ? reject(error) : resolve(id+"."+extension);
   });
 }
 else {

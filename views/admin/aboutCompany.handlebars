@@ -2,9 +2,37 @@
  <div class="content-wrapper">
    <!-- Content Header (Page header) -->
    <section class="content-header">
+     {{#if message}}
+                   <div class="alert alert-success" role="alert">
+                     {{#each message}}
+
+                         <p>{{this}}</p>
+
+                     {{/each}}
+                   </div>
+               {{/if}}
+
+               {{#if errors}}
+                   <div class="alert alert-danger" role="alert">
+                     {{#each errors}}
+
+                         <p>{{this}}</p>
+
+                     {{/each}}
+                   </div>
+               {{/if}}
+               {{#if alert}}
+                   <div class="alert alert-info" role="alert">
+                     {{#each alert}}
+
+                       <p>{{this}}</p>
+
+                     {{/each}}
+                   </div>
+               {{/if}}
      <h1>
        Company
-       <a href="/admin/aboutCompanyEdit" class="btn btn-primary btn-md"> Edit </a>
+        &nbsp;&nbsp;<a href="/admin/aboutCompanyEdit" class="btn btn-primary btn-md"> Edit </a>
      </h1>
 
    </section>

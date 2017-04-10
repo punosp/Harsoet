@@ -50,7 +50,10 @@ module.exports = {
       })
       .catch(function (err) {
         sails.log.error('Company#addDetails :: Error querying DB :: ', err);
-        return reject(err);
+        return reject({
+          code: 500,
+          message: 'INTERNAL_SERVER_ERROR'
+        });
       });
     });
   }
@@ -71,7 +74,10 @@ function updateRecord(criteria, data) {
     })
     .catch(function (err) {
       sails.log.error('Company#updateRecord :: Error querying DB :: ', err);
-      return reject(err);
+      return reject({
+        code: 500,
+        message: 'INTERNAL_SERVER_ERROR'
+      });
     });
   });
 }
@@ -92,7 +98,10 @@ function createRecord(data) {
     })
     .catch(function (err) {
       sails.log.error('Company#createRecord :: Error querying DB :: ', err);
-      return reject(err);
+      return reject({
+        code: 500,
+        message: 'INTERNAL_SERVER_ERROR'
+      });
     });
   });
 }
@@ -106,7 +115,10 @@ function getRecord() {
     })
     .catch(function(err) {
       sails.log.error('Company#getRecord :: Error querying DB :: ', err);
-      return reject(err);
+      return reject({
+        code: 500,
+        message: 'INTERNAL_SERVER_ERROR'
+      });
     })
   });
 }

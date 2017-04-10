@@ -2,8 +2,8 @@
 
 'use strict';
 var nodemailer = require('nodemailer'),
-  SENDER_EMAIL = 'sonu.ashutosh8@gmail.com',
-  SENDER_PASSWORD = 'prmo0008';
+  SENDER_EMAIL = '',
+  SENDER_PASSWORD = '';
 
 
 

@@ -23,6 +23,7 @@
     "handlebars": "^4.0.6",
     "handlebars-layouts": "^3.1.4",
     "include-all": "^1.0.0",
+    "jquery-lazyload": "^1.9.7",
     "md5": "^2.2.1",
     "node-uuid": "^1.4.8",
     "nodemailer": "^2.6.4",
