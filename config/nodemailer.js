@@ -6,7 +6,6 @@ var nodemailer = require('nodemailer'),
   SENDER_PASSWORD = '';
 
 
-
 module.exports.mailer = {
   hostName: getHostName(),
   sender: "MyProf<" + SENDER_EMAIL + ">",
