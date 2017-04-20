@@ -35,7 +35,7 @@ module.exports = {
         columnName: 'email'
       },
     phone: {
-        type: 'integer',
+        type: 'string',
         columnName: 'phone'
       },
     from: {
@@ -49,7 +49,8 @@ module.exports = {
     status: {
         type: 'integer',
         columnName: 'status',
-        defaultsTo: 0
+        defaultsTo: 0 // 0 for secondary
+                      // 1 for primary
       },
     isDeleted: {
       type: 'boolean',

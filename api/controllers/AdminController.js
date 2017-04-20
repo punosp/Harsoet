@@ -31,11 +31,13 @@ module.exports = {
   aboutCompany: aboutCompanyAction,
   companyAddress: companyAddressAction,
   team: teamAction,
+  college: collegeAction,
 
   companyNewsAdd: companyNewsAddAction,
   companyFaqsAdd: companyFaqsAddAction,
   companyAddressAdd: companyAddressAddAction,
   teamAdd: teamAddAction,
+  collegeAdd: collegeAddAction,
 
 
   addTeamMember: addTeamMemberAction,
@@ -43,22 +45,26 @@ module.exports = {
   addCompanyFaqs: addCompanyFaqsAction,
   addCompanyAddress: addCompanyAddressAction,
   aboutCompanyAdd: aboutCompanyAddAction,
+  addCollege: addCollegeAction,
 
   aboutCompanyEdit: aboutCompanyEditAction,
   teamEdit: teamEditAction,
   companyNewsEdit: companyNewsEditAction,
   companyFaqsEdit: companyFaqsEditAction,
   companyAddressEdit: companyAddressEditAction,
+  collegeEdit: collegeEditAction,
 
   teamUpdate: teamUpdateAction,
   companyNewsUpdate: companyNewsUpdateAction,
   companyFaqsUpdate: companyFaqsUpdateAction,
   companyAddressUpdate: companyAddressUpdateAction,
+  collegeUpdate: collegeUpdateAction,
 
   companyAddressDelete: companyAddressDeleteAction,
   companyFaqDelete: companyFaqDeleteAction,
   companyNewsDelete: companyNewsDeleteAction,
-  companyTeamDelete: companyTeamDeleteAction
+  companyTeamDelete: companyTeamDeleteAction,
+  collegeDelete: collegeDeleteAction
 
 }
 
@@ -356,6 +362,7 @@ function companyFaqsAddAction(req, res) {
     });
 
 }
+
 function companyNewsAddAction(req, res) {
 
     res.view("admin/newsAndUpdatesAdd", {
@@ -386,7 +393,14 @@ function teamAddAction(req, res) {
     });
 }
 
+function collegeAddAction(req, res) {
+    res.view("admin/collegeAdd", {
+      message: req.flash("message"),
+      errors: req.flash("errors"),
+      layout: 'adminLayout'
+    });
 
+}
 
 function companyFaqsAction(req, res) {
   Faq
@@ -477,6 +491,21 @@ function teamAction(req, res) {
   });
 }
 
+function collegeAction(req, res) {
+  College
+  .getColleges()
+  .then(function(colleges) {
+    res.view("admin/colleges", {
+      message: req.flash("message"),
+      errors: req.flash("errors"),
+      colleges: colleges,
+      layout: 'adminLayout'
+    });
+  })
+  .catch(function(err) {
+    return res.redirect("/admin/"+err.code+"/error");
+  });
+}
 
 function addTeamMemberAction(req, res) {
 
@@ -648,6 +677,40 @@ function addCompanyAddressAction(req, res) {
     });
 }
 
+function addCollegeAction(req, res) {
+
+  var form = req.form;
+
+  if(!form.isValid) {
+    // TODO: throw error
+    var flashMessages = ValidationService
+      .getFormFlashMessages(req.form.getErrors());
+    _.forEach(flashMessages, function (message) {
+      req.flash('errors', message);
+    });
+
+    return res.redirect('/admin/collegeAdd');
+
+  }
+
+  College
+    .addCollege(form)
+    .then(function () {
+      // send success response
+      req.flash("message", "A new college has been added");
+
+      return res.redirect('/admin/college');
+    })
+    .catch(function (err) {
+      sails.log.error('AdminController#addCollegeAction :: Error ::', err);
+
+      // check for the error code and accordingly send the response
+      var errors = err.message;
+      req.flash("errors", errors);
+      return res.redirect('/admin/collegeAdd');
+    });
+}
+
 function teamEditAction(req, res) {
   var id = req.param('id');
 
@@ -683,6 +746,7 @@ function companyNewsEditAction(req, res) {
   })
 
 }
+
 function companyFaqsEditAction(req, res) {
   var id = req.param('id');
   Faq
@@ -700,6 +764,7 @@ function companyFaqsEditAction(req, res) {
   });
 
 }
+
 function companyAddressEditAction(req, res) {
   var id = req.param('id');
   Address
@@ -732,6 +797,24 @@ function aboutCompanyEditAction(req, res) {
   .catch(function(err) {
     return res.redirect("/admin/"+err.code+"/error");
   })
+
+}
+
+function collegeEditAction(req, res) {
+  var id = req.param('id');
+  College
+  .getRecordWithId(id)
+  .then(function(college) {
+    res.view("admin/collegeEdit", {
+      message: req.flash("message"),
+      errors: req.flash("errors"),
+      college: college,
+      layout: 'adminLayout'
+    });
+  })
+  .catch(function(err) {
+    return res.redirect("/admin/"+err.code+"/error");
+  });
 
 }
 
@@ -867,6 +950,39 @@ function companyAddressUpdateAction(req, res) {
     });
 }
 
+function collegeUpdateAction(req, res) {
+  var id = req.param('id');
+  if(!id)
+  return res.redirect("/admin/400/error");
+  var form = req.form;
+  if(!form.isValid) {
+    // TODO: throw error
+    var flashMessages = ValidationService
+      .getFormFlashMessages(req.form.getErrors());
+    _.forEach(flashMessages, function (message) {
+      req.flash('errors', message);
+    });
+
+    return res.redirect('/admin/'+id+'/collegeEdit');
+
+  }
+
+  College
+    .updateRecord(id, form)
+    .then(function () {
+      // send success response
+      req.flash("message", "A college has been updated");
+
+      return res.redirect('/admin/college');
+    })
+    .catch(function (err) {
+      sails.log.error('AdminController#collegeUpdateAction :: Error ::', err);
+
+      // check for the error code and accordingly send the response
+      return res.redirect("/admin/"+err.code+"/error");
+    });
+}
+
 function companyAddressDeleteAction(req, res) {
   Address
     .deleteRecord(req.param('id'))
@@ -929,6 +1045,24 @@ function companyTeamDeleteAction(req, res) {
     })
     .catch(function (err) {
       sails.log.error('AdminController#companyTeamDeleteAction :: Error ::', err);
+
+      // check for the error code and accordingly send the response
+      return res.redirect("/admin/"+err.code+"/error");
+    });
+}
+
+
+function collegeDeleteAction(req, res) {
+  College
+    .deleteRecord(req.param('id'))
+    .then(function () {
+      // send success response
+      req.flash("message", "A college has been deleted");
+
+      return res.redirect('/admin/college');
+    })
+    .catch(function (err) {
+      sails.log.error('AdminController#collegeDeleteAction :: Error ::', err);
 
       // check for the error code and accordingly send the response
       return res.redirect("/admin/"+err.code+"/error");

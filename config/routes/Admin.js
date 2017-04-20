@@ -158,5 +158,29 @@ module.exports.routes = {
   'get /admin/address/:id/delete': {
     controller: 'AdminController',
     action: 'companyAddressDelete'
+  },
+  'get /admin/college': {
+    controller: 'AdminController',
+    action: 'college'
+  },
+  'get /admin/collegeAdd': {
+    controller: 'AdminController',
+    action: 'collegeAdd'
+  },
+  'post /admin/addCollege': {
+    controller: 'AdminController',
+    action: 'addCollege'
+  },
+  'get /admin/college/:id/edit': {
+    controller: 'AdminController',
+    action: 'collegeEdit'
+  },
+  'post /admin/college/:id/update': {
+    controller: 'AdminController',
+    action: 'collegeUpdate'
+  },
+  'get /admin/college/:id/delete': {
+    controller: 'AdminController',
+    action: 'collegeDelete'
   }
 };

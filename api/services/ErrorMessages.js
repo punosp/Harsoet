@@ -141,7 +141,14 @@ var mappings = {
   COMPANY_EMAIL_REQUIRED: 'Please enter email id',
   FROM_REQUIRED: 'Please select starting time',
   TO_REQUIRED: 'Please select closing time',
-  STATUS_REQUIRED: 'Please select type of address'
+  STATUS_REQUIRED: 'Please select type of address',
+
+  COLLEGE_NAME_REQUIRED: 'Please enter the college name',
+  ESTABLISHMENT_YEAR_REQUIRED: 'Please enter the year of establishment',
+  ESTABLISHMENT_YEAR_MUST_BE_NUMBER: 'Establishment year must be numeric',
+  FEE_REQUIRED: 'Please enter the total fees',
+  FEE_MUST_BE_NUMBER: 'Fee must be a number',
+  COLLEGE_DETAILS_REQUIRED: 'Please enter college details'
 
 };
 

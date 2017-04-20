@@ -7,10 +7,10 @@
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="single-footer-widget Statistic-pdbottom">
                     <div class="footer-logo">
-                        <img src="/Statistic/img/resources/footer-logo.png" alt="Awesome Footer Logo">
+                      <a href="/"><img src="/images/logo1.png" alt="Awesome Logo" style="witdth: 50px;height:50px"></a>
                     </div>
                     <div class="statistic-info">
-                        <p>Statistic Company provide expert consulting, financial advice. Over 25 years of experience we ensure you always getting the good guidance from the top people in the entire of finance industry.</p>
+                        <p>At sanjeewaniglobal we provide the best Guidelines to students and Parents for making bright future. We are not providing only admission Consultation; we provide the best guidelines to students.</p>
                     </div>
                     <ul class="footer-social-links">
                         <li><a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a></li>
@@ -27,78 +27,22 @@
                         <h3>Latest Updates</h3>
                     </div>
                     <ul class="latest-project">
+                      {{#each partialData.updates}}
                         <li>
                             <div class="img-holder">
-                                <img src="/Statistic/img/footer/latest-project/1.jpg" alt="Awesome Image">
+                                <img src="https://s3.amazonaws.com/sanjeewaniglobal-images/{{this.imageName}}" alt="Awesome Image" style="width: 83px; height: 83px">
                                 <div class="overlay">
                                     <div class="box">
                                         <div class="content">
-                                            <a href="project-single.html"><span class="flaticon-link-symbol"></span></a>
+                                            <a href="/news/{{this.id}}/read"><span class="flaticon-link-symbol"></span></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="img-holder">
-                                <img src="/Statistic/img/footer/latest-project/2.jpg" alt="Awesome Image">
-                                <div class="overlay">
-                                    <div class="box">
-                                        <div class="content">
-                                            <a href="project-single.html"><span class="flaticon-link-symbol"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-holder">
-                                <img src="/Statistic/img/footer/latest-project/3.jpg" alt="Awesome Image">
-                                <div class="overlay">
-                                    <div class="box">
-                                        <div class="content">
-                                            <a href="project-single.html"><span class="flaticon-link-symbol"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-holder">
-                                <img src="/Statistic/img/footer/latest-project/4.jpg" alt="Awesome Image">
-                                <div class="overlay">
-                                    <div class="box">
-                                        <div class="content">
-                                            <a href="project-single.html"><span class="flaticon-link-symbol"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-holder">
-                                <img src="/Statistic/img/footer/latest-project/5.jpg" alt="Awesome Image">
-                                <div class="overlay">
-                                    <div class="box">
-                                        <div class="content">
-                                            <a href="project-single.html"><span class="flaticon-link-symbol"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-holder">
-                                <img src="/Statistic/img/footer/latest-project/6.jpg" alt="Awesome Image">
-                                <div class="overlay">
-                                    <div class="box">
-                                        <div class="content">
-                                            <a href="project-single.html"><span class="flaticon-link-symbol"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                        {{/each}}
+
+
                     </ul>
                 </div>
             </div>
@@ -110,19 +54,10 @@
                         <h3>Our Team </h3>
                     </div>
                     <ul class="latest-project">
+                      {{#each partialData.team}}
                         <li>
                             <div class="img-holder">
-                                <img src="/Statistic/img/footer/latest-project/1.jpg" alt="Awesome Image">
-                                <div class="overlay">
-                                    <div class="box">
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-holder">
-                                <img src="/Statistic/img/footer/latest-project/2.jpg" alt="Awesome Image">
+                                <img src="https://s3.amazonaws.com/sanjeewaniglobal-images/{{this.imageName}}" alt="Awesome Image" style="width: 83px; height: 83px">
                                 <div class="overlay">
                                     <div class="box">
 
@@ -130,46 +65,8 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="img-holder">
-                                <img src="/Statistic/img/footer/latest-project/3.jpg" alt="Awesome Image">
-                                <div class="overlay">
-                                    <div class="box">
+                        {{/each}}
 
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-holder">
-                                <img src="/Statistic/img/footer/latest-project/4.jpg" alt="Awesome Image">
-                                <div class="overlay">
-                                    <div class="box">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-holder">
-                                <img src="/Statistic/img/footer/latest-project/5.jpg" alt="Awesome Image">
-                                <div class="overlay">
-                                    <div class="box">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-holder">
-                                <img src="/Statistic/img/footer/latest-project/6.jpg" alt="Awesome Image">
-                                <div class="overlay">
-                                    <div class="box">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -181,20 +78,21 @@
                         <div id="contact-address-carousel" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#contact-address-carousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#contact-address-carousel" data-slide-to="1"></li>
-                                <li data-target="#contact-address-carousel" data-slide-to="2"></li>
+                                {{#each partialData.addresses}}
+                                <li data-target="#contact-address-carousel" data-slide-to="{{counter @index}}"></li>
+                                {{/each}}
                             </ol>
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
                                     <div class="single-contact-address">
                                         <ul>
-                                           <li class="title">United States Office</li>
+                                           <li class="title">{{partialData.primaryAddress.country}} Office</li>
                                             <li>
                                                 <div class="icon-holder map">
                                                     <span class="flaticon-signs"></span>
                                                 </div>
                                                 <div class="content-holder">
-                                                    <p>008 City of Work ,<br>New York, NY 641109 US.</p>
+                                                    <p>{{partialData.primaryAddress.address}} ,<br>{{partialData.primaryAddress.city}},  {{partialData.primaryAddress.pin}}, {{partialData.primaryAddress.state}}</p>
                                                 </div>
                                             </li>
                                             <li>
@@ -202,7 +100,7 @@
                                                     <span class="flaticon-phone-call"></span>
                                                 </div>
                                                 <div class="content-holder">
-                                                    <p>Call us: +3257 700 1430</p>
+                                                    <p>Call us: {{partialData.primaryAddress.phone}}</p>
                                                 </div>
                                             </li>
                                             <li>
@@ -210,7 +108,7 @@
                                                     <span class="flaticon-e-mail-envelope"></span>
                                                 </div>
                                                 <div class="content-holder">
-                                                    <p>Mail us : USA@Statistic.com</p>
+                                                    <p>Mail us : {{partialData.primaryAddress.email}}</p>
                                                 </div>
                                             </li>
                                             <li>
@@ -218,22 +116,23 @@
                                                     <span class="flaticon-clock"></span>
                                                 </div>
                                                 <div class="content-holder">
-                                                    <p>Mon - Sat 9.00 - 20.00,<br>Sunday CLOSED</p>
+                                                    <p>{{partialData.primaryAddress.from}} - {{partialData.primaryAddress.to}},<br>Mon - Sun</p>
                                                 </div>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
+                                {{#each partialData.addresses}}
                                 <div class="item">
                                     <div class="single-contact-address">
                                         <ul>
-                                           <li class="title">United Kingdom Office</li>
+                                           <li class="title">{{this.country}} Office</li>
                                             <li>
                                                 <div class="icon-holder map">
                                                     <span class="flaticon-signs"></span>
                                                 </div>
                                                 <div class="content-holder">
-                                                    <p>008 City of Work ,<br>New York, NY 641109 US.</p>
+                                                    <p>{{this.address}} ,<br>{{this.city}}, {{this.pin}}, {{this.state}}.</p>
                                                 </div>
                                             </li>
                                             <li>
@@ -241,7 +140,7 @@
                                                     <span class="flaticon-phone-call"></span>
                                                 </div>
                                                 <div class="content-holder">
-                                                    <p>Call us: +3257 700 1430</p>
+                                                    <p>Call us: {{this.phone}}</p>
                                                 </div>
                                             </li>
                                             <li>
@@ -249,7 +148,7 @@
                                                     <span class="flaticon-e-mail-envelope"></span>
                                                 </div>
                                                 <div class="content-holder">
-                                                    <p>Mail us : USA@Statistic.com</p>
+                                                    <p>Mail us : {{this.email}}</p>
                                                 </div>
                                             </li>
                                             <li>
@@ -257,51 +156,13 @@
                                                     <span class="flaticon-clock"></span>
                                                 </div>
                                                 <div class="content-holder">
-                                                    <p>Mon - Sat 9.00 - 20.00,<br>Sunday CLOSED</p>
+                                                    <p>{{this.from}} {{this.to}}, <br>Mon - Sun</p>
                                                 </div>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="item">
-                                    <div class="single-contact-address">
-                                        <ul>
-                                           <li class="title">United Arab Office</li>
-                                            <li>
-                                                <div class="icon-holder map">
-                                                    <span class="flaticon-signs"></span>
-                                                </div>
-                                                <div class="content-holder">
-                                                    <p>008 City of Work ,<br>New York, NY 641109 US.</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon-holder">
-                                                    <span class="flaticon-phone-call"></span>
-                                                </div>
-                                                <div class="content-holder">
-                                                    <p>Call us: +3257 700 1430</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon-holder">
-                                                    <span class="flaticon-e-mail-envelope"></span>
-                                                </div>
-                                                <div class="content-holder">
-                                                    <p>Mail us : USA@Statistic.com</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon-holder">
-                                                    <span class="flaticon-clock"></span>
-                                                </div>
-                                                <div class="content-holder">
-                                                    <p>Mon - Sat 9.00 - 20.00,<br>Sunday CLOSED</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                {{/each}}
                             </div>
 
                         </div>
@@ -320,17 +181,16 @@
         <div class="row">
             <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
                 <div class="copyright-text">
-                    <p>© 2016 Statistic Theme Designed by <a href="">Steelthemes</a></p>
+                    <p>Copyright © 2017 Harsoet pvt. ltd.</p>
                 </div>
             </div>
             <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
                 <ul class="footer-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="blog.html">news</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/aboutUs">About us</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/updates">news</a></li>
+                    <li><a href="/contactUs">Contact us</a></li>
                 </ul>
             </div>
         </div>

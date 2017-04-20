@@ -1,0 +1,107 @@
+
+    <!-- Content Wrapper. Contains page content -->
+     <div class="content-wrapper">
+       <!-- Content Header (Page header) -->
+       <section class="content-header">
+         {{#if message}}
+                       <div class="alert alert-success" role="alert">
+                         {{#each message}}
+
+                             <p>{{this}}</p>
+
+                         {{/each}}
+                       </div>
+                   {{/if}}
+
+                   {{#if errors}}
+                       <div class="alert alert-danger" role="alert">
+                         {{#each errors}}
+
+                             <p>{{this}}</p>
+
+                         {{/each}}
+                       </div>
+                   {{/if}}
+                   {{#if alert}}
+                       <div class="alert alert-info" role="alert">
+                         {{#each alert}}
+
+                           <p>{{this}}</p>
+
+                         {{/each}}
+                       </div>
+                   {{/if}}
+         <h1>
+           Company Address
+         </h1>
+
+       </section>
+
+       <!-- Main content -->
+       <section class="content">
+         <div class="row">
+           <div class="col-md-3"></div>
+           <div class="col-md-6">
+             <div class="box box-primary">
+               <div class="box-header with-border">
+               </div>
+               <!-- /.box-header -->
+               <!-- form start -->
+               <form role="form" method="post" action="/admin/college/{{college.id}}/update">
+                 <div class="box-body">
+                   <div class="form-group">
+                     <label for="name">Name</label>
+                     <input type="text" class="form-control" value = "{{college.name}}" id="name" placeholder="Enter college name" name="name" required>
+                   </div>
+                   <div class="form-group">
+                     <label for="country">Country</label>
+                     <input type="text" class="form-control" value = "{{college.country}}" id="country" placeholder="Enter country" name="country" required>
+                   </div>
+                   <div class="form-group">
+                     <label for="city">City</label>
+                     <input type="text" class="form-control" value = "{{college.city}}" id="city" placeholder="Enter city" name="city" required>
+                   </div>
+                   <div class="form-group">
+                     <label for="year-established">Establishment Year</label>
+                     <input type="number" class="form-control" value = "{{college.established}}" id="year-established" placeholder="Enter establishment year" name="established" required>
+                   </div>
+                   <div class="form-group">
+                     <label for="fee">Total Fees(INR)</label>
+                     <input type="number" class="form-control" value = "{{college.fee}}" id="fee" placeholder="Enter fees" name="fee" required>
+                   </div>
+                   <div class="box box-info">
+                     <div class="box-header">
+                       <h3 class="box-title">Details
+                       </h3>
+                       <!-- tools box -->
+                       <div class="pull-right box-tools">
+                         <button type="button" class="btn btn-info btn-sm" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                           <i class="fa fa-minus"></i></button>
+
+                       </div>
+                       <!-- /. tools -->
+                     </div>
+                     <!-- /.box-header -->
+                     <div class="box-body pad">
+                             <textarea id="editor2" name="details" rows="10" cols="80">
+                               {{college.details}}
+                             </textarea>
+                     </div>
+                   </div>
+
+                 </div>
+                 <!-- /.box-body -->
+
+                 <div class="box-footer">
+                   <button type="submit" class="btn btn-primary">Update</button>
+                 </div>
+               </form>
+             </div>
+           <!-- /.col-->
+         </div>
+         <div class="col-md-3"></div>
+         <!-- ./row -->
+       </section>
+       <!-- /.content -->
+     </div>
+     <!-- /.content-wrapper -->

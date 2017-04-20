@@ -74,5 +74,72 @@ module.exports = {
         type: 'boolean',
         defaultsTo: false
       }
-    }
+    },
+    partialData: partialData
   };
+
+  function partialData(req, res) {
+    return Q.promise(function (resolve, reject) {
+
+      var addresses, updates, team;
+    Address
+    .getAddress()
+    .then(function(add) {
+      addresses = add;
+      return News.getNews();
+    })
+    .then(function(news) {
+      updates = news;
+      return Team.getTeam();
+    })
+    .then(function(teamMembers) {
+      team = teamMembers;
+      var selectedUpdates=[], selectedTeam=[], primaryAddress, secondaryAddresses=[], threeUpdates=[];
+      var count = 0;
+      _.forEach(updates, function(value) {
+        selectedUpdates.push(value);
+        if(count < 3) {
+          threeUpdates.push(value);
+        }
+        count++;
+
+        if(count==6) {
+          return false;
+        }
+      })
+      count =0;
+      _.forEach(team, function(value) {
+        selectedTeam.push(value);
+        count++;
+        if(count==6) {
+          return false;
+        }
+      })
+      count=0;
+      _.forEach(addresses, function(value) {
+        if(value.status == 1 && count==0) {
+          primaryAddress = value;
+          count++;
+        }
+        else {
+          secondaryAddresses.push(value);
+        }
+      })
+      var pData = {
+        primaryAddress : primaryAddress,
+        addresses : secondaryAddresses,
+        updates : selectedUpdates,
+        threeUpdates: threeUpdates,
+        team : selectedTeam
+      }
+      return resolve(pData);
+    })
+    .catch(function (err) {
+      sails.log.error('User#partialData :: Error ::', err);
+      return reject({
+        code: 500,
+        message: 'INTERNAL_SERVER_ERROR'
+      })
+    })
+  });
+}

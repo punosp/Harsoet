@@ -57,38 +57,46 @@ module.exports.policies = {
     enterChangedPassword: "isAuthenticated",
     changePassword: ["isAuthenticated","validation/ChangePasswordValidation"],
     dashBoard: ["isAuthenticated","isAdminRole"],
+
     aboutCompany: ["isAuthenticated","isAdminRole"],
     companyNews: ["isAuthenticated","isAdminRole"],
     companyFaqs: ["isAuthenticated","isAdminRole"],
     companyAddress: ["isAuthenticated","isAdminRole"],
     team: ["isAuthenticated","isAdminRole"],
+    college: ["isAuthenticated","isAdminRole"],
 
     companyNewsAdd: ["isAuthenticated","isAdminRole"],
     companyFaqsAdd: ["isAuthenticated","isAdminRole"],
     companyAddressAdd: ["isAuthenticated","isAdminRole"],
     teamAdd: ["isAuthenticated","isAdminRole"],
+    collegeAdd: ["isAuthenticated","isAdminRole"],
 
     aboutCompanyEdit: ["isAuthenticated","isAdminRole"],
     teamEdit: ["isAuthenticated","isAdminRole"],
     companyNewsEdit: ["isAuthenticated","isAdminRole"],
     companyFaqsEdit: ["isAuthenticated","isAdminRole"],
     companyAddressEdit: ["isAuthenticated","isAdminRole"],
+    collegeEdit: ["isAuthenticated","isAdminRole"],
 
     addTeamMember: ["validation/AddTeamValidation","isAuthenticated","isAdminRole"],
     addCompanyNews: ["validation/AddNewsValidation","isAuthenticated","isAdminRole"],
     addCompanyFaqs: ["validation/AddFaqsValidation","isAuthenticated","isAdminRole"],
     aboutCompanyAdd: ["validation/AddAboutValidation","isAuthenticated","isAdminRole"],
     addCompanyAddress: ["validation/AddAddressValidation","isAuthenticated","isAdminRole"],
+    addCollege: ["validation/AddCollegeValidation","isAuthenticated","isAdminRole"],
 
     teamUpdate: ["validation/AddTeamValidation","isAuthenticated","isAdminRole"],
     companyNewsUpdate: ["validation/AddNewsValidation","isAuthenticated","isAdminRole"],
     companyFaqsUpdate: ["validation/AddFaqsValidation","isAuthenticated","isAdminRole"],
     companyAddressUpdate: ["validation/AddAddressValidation","isAuthenticated","isAdminRole"],
+    collegeUpdate: ["validation/AddCollegeValidation","isAuthenticated","isAdminRole"],
+
 
     companyAddressDelete: ["isAuthenticated","isAdminRole"],
     companyFaqDelete: ["isAuthenticated","isAdminRole"],
     companyNewsDelete: ["isAuthenticated","isAdminRole"],
     companyTeamDelete:["isAuthenticated","isAdminRole"],
+    collegeDelete: ["isAuthenticated","isAdminRole"],
 
     errorPage: ["isAuthenticated","isAdminRole"]
 

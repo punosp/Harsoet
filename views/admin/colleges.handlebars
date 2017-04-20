@@ -1,0 +1,100 @@
+
+    <!-- Content Wrapper. Contains page content -->
+     <div class="content-wrapper">
+       <!-- Content Header (Page header) -->
+       <section class="content-header">
+         {{#if message}}
+                       <div class="alert alert-success" role="alert">
+                         {{#each message}}
+
+                             <p>{{this}}</p>
+
+                         {{/each}}
+                       </div>
+                   {{/if}}
+
+                   {{#if errors}}
+                       <div class="alert alert-danger" role="alert">
+                         {{#each errors}}
+
+                             <p>{{this}}</p>
+
+                         {{/each}}
+                       </div>
+                   {{/if}}
+                   {{#if alert}}
+                       <div class="alert alert-info" role="alert">
+                         {{#each alert}}
+
+                           <p>{{this}}</p>
+
+                         {{/each}}
+                       </div>
+                   {{/if}}
+         <h1>
+           Faq's
+           &nbsp;&nbsp;<a href="/admin/collegeAdd" class="btn btn-primary btn-md"> Add </a>
+         </h1>
+
+       </section>
+
+       <!-- Main content -->
+       <section class="content">
+         {{#each colleges}}
+         <div class="row">
+
+           <div class="col-md-3"></div>
+           <div class="col-md-6">
+               <!-- /.box-header -->
+               <!-- form start -->
+
+               <div class="box box-primary collapsed-box">
+                 <div class="box-header">
+
+                   <h3 class="box-title">Name : {{{this.name}}}
+                   </h3>
+                   <!-- tools box -->
+                   <div class="pull-right box-tools">
+                     <button type="button" class="btn btn-info btn-sm" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                       <i class="fa fa-plus"></i></button>
+
+                   </div>
+                   <br>
+                   <br>
+                   <div>
+                     <a href="/admin/college/{{this.id}}/edit" class="btn btn-warning pull-right"> Edit </a>
+                     <a href="/admin/college/{{this.id}}/delete" class="btn btn-danger pull-right" style="margin-right: 10px"> Delete </a>
+                   </div>
+
+                   <!-- /. tools -->
+                 </div>
+                 <!-- /.box-header -->
+                 <div class="box-body pad">
+                  <p><b>Country : </b></p>
+                  <p>{{this.country}}</p>
+                  <p><b>City : </b></p>
+                  <p>{{this.city}}</p>
+                  <p><b>Year established : </b></p>
+                  <p>{{this.established}}</p>
+                  <p><b>Fees : </b></p>
+                  <p>{{this.fee}}</p>
+                  <p><b>Details</b></p>
+                  {{{this.details}}}
+
+                 </div>
+               </div>
+
+
+             </div>
+
+           <!-- /.col-->
+
+         <div class="col-md-3"></div>
+         <!-- ./row -->
+
+       </div>
+{{/each}}
+       </section>
+       <!-- /.content -->
+</div>
+     <!-- /.content-wrapper -->

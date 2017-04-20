@@ -24,7 +24,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
                 <div class="logo">
-                    <a href="/"><img src="/Statistic/img/resources/logo.png" alt="Awesome Logo"></a>
+                    <a href="/"><img src="/images/logo1.png" alt="Awesome Logo" style="witdth: 50px;height:50px"></a>
                 </div>
             </div>
             <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
@@ -34,15 +34,18 @@
                             <span class="flaticon-signs"></span>
                         </div>
                         <div class="content">
-                            <h5>008 City of Work ,<br>New York, NY 641109 US.</h5>
+                            <h5>{{partialData.primaryAddress.address}}, <br>
+                            {{partialData.primaryAddress.city}}, {{partialData.primaryAddress.pin}},
+                          {{partialData.primaryAddress.country}}</h5>
                         </div>
+
                     </li>
                     <li>
                         <div class="icon-holder">
                             <span class="flaticon-clock"></span>
                         </div>
                         <div class="content">
-                            <h5>Mon - Sat 8.00 - 20.00 <br>Sunday CLOSED</h5>
+                            <h5>{{partialData.primaryAddress.from}} - {{partialData.primaryAddress.to}} <br>Mon - Sun</h5>
                         </div>
                     </li>
                     <li class="pdleft">
@@ -50,7 +53,7 @@
                             <span class="flaticon-phone-call"></span>
                         </div>
                         <div class="content">
-                            <h5>+1 888 122 9000<br>Call us for enquiry</h5>
+                            <h5>{{partialData.primaryAddress.phone}}<br>Call us for enquiry</h5>
                         </div>
                     </li>
                     <li class="request">
@@ -76,26 +79,26 @@
             </div>
             <div class="navbar-collapse collapse clearfix">
                 <ul class="navigation">
-                    <li class="current"><a href="index.html">Home</a></li>
-                    <li class="dropdown"><a href="about.html">About us</a>
+                    <li {{#ifCond page "home"}}class="current"{{/ifCond}}><a href="/">Home</a></li>
+                    <li class="dropdown {{#ifCond page "about"}}current{{/ifCond}}"><a href="/aboutUs">About us</a>
                         <ul>
-                            <li><a href="company-history.html">Company History</a></li>
-                            <li><a href="our-team.html">Our Team</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                            <li><a href="client-feedback.html">Client Feedback</a></li>
+                            <li><a href="/history">Company History</a></li>
+                            <li><a href="/team">Our Team</a></li>
+                            <li><a href="/faq">FAQ</a></li>
+                            <li><a href="/feedback">Client Feedback</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="services.html">Services</a>
+                    <li class="dropdown {{#ifCond page "service"}}current{{/ifCond}}"><a href="/services">Services</a>
                         <ul>
-                            <li><a href="services.html">MBBS consultancy</a></li>
-                            <li><a href="restructuring-turnaround.html">Job consultancy</a></li>
+                            <li><a href="/mbbs">MBBS consultancy</a></li>
+                            <li><a href="/job">Job consultancy</a></li>
                         </ul>
                     </li>
 
-                    <li><a href="blog-list.html">News</a></li>
+                    <li {{#ifCond page "updates"}}class="current"{{/ifCond}}><a href="/updates">News</a></li>
 
-                    <li><a href="contact.html">Contact us</a></li>
-                    <li><a href="applyOnline.html">Apply Online</a></li>
+                    <li {{#ifCond page "contact"}}class="current"{{/ifCond}}><a href="/contactUs">Contact us</a></li>
+                    <li {{#ifCond page "apply"}}class="current"{{/ifCond}}><a href="/apply">Apply Online</a></li>
                 </ul>
             </div>
         </nav>

@@ -759,7 +759,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 =============================================
 ***/
 .fact-counter-area {
-    background: rgba(0, 0, 0, 0) url("../../images/farewell.jpg") no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url("../../images/farewell2.jpeg") no-repeat scroll center center / cover;
     padding-top: 130px;
     padding-bottom: 130px;
     position: relative;
@@ -876,7 +876,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 =============================================
 ***/
 .caption-area {
-    background: rgba(0, 0, 0, 0) url("../../images/mission.jpg") no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url("../../images/mission2.jpeg") no-repeat scroll center center / cover;
     padding-bottom: 130px;
     padding-top: 130px;
     position: relative;
@@ -1360,7 +1360,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 =============================================
 ***/
 .call-back-area {
-    background: url(../../images/call-back.jpg);
+    background: url(../../images/call3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;

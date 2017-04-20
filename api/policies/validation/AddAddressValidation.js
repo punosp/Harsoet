@@ -28,8 +28,7 @@ module.exports = form(
   validate('country')
     .required("", "COUNTRY_REQUIRED"),
   validate('phone')
-    .required("", "COMPANY_PHONE_REQUIRED")
-    .isNumeric("PHONE_MUST_BE_NUMBER"),
+    .required("", "COMPANY_PHONE_REQUIRED"),
   validate('email')
     .required("", "COMPANY_EMAIL_REQUIRED")
     .isEmail("REGISTRATION_INVALID_EMAIL"),
