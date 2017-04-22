@@ -1,0 +1,101 @@
+
+<!--Start breadcrumb area-->
+<section class="breadcrumb-area" style="background-image: url(img/breadcrumb/breadcrumb-bg.jpg);">
+	<div class="container text-center">
+		<h1>{{{news.heading}}}</h1>
+		<span class="border"></span>
+	</div>
+</section>
+<!--End breadcrumb area-->
+
+<!--Start breadcrumb bottom area-->
+<section class="breadcrumb-bottom-area">
+    <div class="container">
+        <div class="left pull-left">
+            <a href="#">{{{news.heading}}}</a>
+        </div>
+        <div class="right pull-right">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><span class="flaticon-arrowhead-pointing-to-the-right"></span></li>
+                <li><a href="#">Updates</a></li>
+                <li><span class="flaticon-arrowhead-pointing-to-the-right"></span></li>
+                <li>{{{news.heading}}}</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--End breadcrumb bottom area-->
+
+<!--Start blog detail area-->
+<section id="blog-area" class="blog-detail">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-8 blog-post">
+                <div class="single-blog-post">
+                    <div class="img-holder">
+                        <img src="https://s3.amazonaws.com/sanjeewaniglobal-images/{{news.imageName}}"style="height: 500px; width: 870px" alt="Awesome Image">
+                    </div>
+
+                    <h3 class="title">
+                        <a href="#">{{{news.heading}}}</a>
+                    </h3>
+                    <div class="text">
+											{{{news.description}}}
+                        </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-7">
+                <div class="sidebar-wrapper">
+                    <!--Start single sidebar-->
+
+                    <div class="single-sidebar">
+                        <div class="sec-title">
+                            <h1>Recent Posts</h1>
+                            <span class="border"></span>
+                        </div>
+                        <ul class="recent-post">
+													{{#each partialData.threeUpdates}}
+                            <li style="padding-top: 10px">
+                                <div class="img-holder">
+                                    <img src="https://s3.amazonaws.com/sanjeewaniglobal-images/{{this.imageName}}" style="height: 75px !important; width: 75px" alt="Awesome Image">
+                                    <div class="overlay">
+                                        <div class="box">
+                                            <div class="content">
+                                                <a href="/show/{{this.id}}/news">
+                                                    <span class="flaticon-link-symbol"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h3><a href="show/{{this.id}}/news"></a>{{{this.heading}}}</h3>
+                                </div>
+                            </li>
+														{{/each}}
+
+                        </ul>
+                    </div>
+
+                    <!--End single sidebar-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End blog detail area-->
+
+<!--Start slogan area-->
+<section class="slogan-area">
+    <div class="container">
+        <div class="title pull-left">
+            <h2>Sanjeewni Global Consultancy, India's Leading admission Consultant.</h2>
+        </div>
+        <div class="buttons pull-right">
+            <a href="/apply" class="hvr-sweep-to-bottom">Apply Online</a>
+        </div>
+    </div>
+</section>
+<!--End slogan area-->

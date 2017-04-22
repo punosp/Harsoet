@@ -53,6 +53,10 @@ module.exports.routes = {
     controller: 'UserController',
     action: 'requestCallBack'
   },
+  'get /show/:id/news': {
+    controller: 'UserController',
+    action: 'showNews'
+  },
   'get /error': {
     controller: 'UserController',
     action: 'errorPage'
