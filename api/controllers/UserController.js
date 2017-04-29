@@ -25,8 +25,12 @@ module.exports = {
   team: teamAction,
   faq: faqAction,
   feedback: feedbackAction,
-  showNews: showNewsAction
-  // mbbs: mbbsAction,
+  showNews: showNewsAction,
+  mbbs: mbbsAction,
+  college: collegeAction,
+  query: queryAction,
+  applyOnline: applyOnlineAction,
+  requestCallBack: requestCallBackAction
   // job: jobAction
 }
 
@@ -64,6 +68,8 @@ var partialData, faqs=[], company;
       partialData: partialData,
       faqs: faqs,
       company: company,
+      message: req.flash("message"),
+      errors: req.flash("errors"),
       layout: 'layout'
     });
   })
@@ -239,8 +245,11 @@ var partialData;
   .partialData()
   .then(function(pData) {
     partialData = pData;
+    //console.log("m",req.flash("error"));
     res.view("user/contact", {
       partialData: partialData,
+      message: req.flash("message"),
+      errors: req.flash("errors"),
       layout: 'layout'
     });
   })
@@ -261,6 +270,8 @@ var partialData;
     partialData = pData;
     res.view("user/apply", {
       partialData: partialData,
+      message: req.flash("message"),
+      errors: req.flash("errors"),
       layout: 'layout'
     });
   })
@@ -313,5 +324,130 @@ var partialData;
 
     // check for the error code and accordingly send the response
     return res.redirect("/error");
+  });
+}
+
+function mbbsAction(req, res) {
+var partialData;
+  User
+  .partialData()
+  .then(function(pData) {
+    partialData = pData;
+    return College.getColleges()
+  })
+  .then(function(colleges) {
+    res.view("user/mbbs", {
+      partialData: partialData,
+      colleges: colleges,
+      layout: 'layout'
+    });
+  })
+  .catch(function (err) {
+    sails.log.error('UserController#mbbsAction :: Error ::', err);
+
+    // check for the error code and accordingly send the response
+    return res.redirect("/error");
+  });
+}
+
+function collegeAction(req, res) {
+  var id = req.param("id");
+var partialData;
+  User
+  .partialData()
+  .then(function(pData) {
+    partialData = pData;
+    return College.getRecordWithId(id);
+  })
+  .then(function(college) {
+    res.view("user/single-college", {
+      partialData: partialData,
+      college: college,
+      layout: 'layout'
+    });
+  })
+  .catch(function (err) {
+    sails.log.error('UserController#mbbsAction :: Error ::', err);
+
+    // check for the error code and accordingly send the response
+    return res.redirect("/error");
+  });
+}
+
+function queryAction(req, res) {
+  var form = req.form;
+  if(!form.isValid) {
+    // TODO: throw error
+    var flashMessages = ValidationService
+      .getFormFlashMessages(req.form.getErrors());
+    _.forEach(flashMessages, function (message) {
+      req.flash('errors', message);
+    });
+    console.log(flashMessages);
+    return res.redirect('/contactUs');
+
+  }
+  Query
+  .addQuery(form)
+  .then(function(data) {
+    req.flash("message", "We will come back to you soon...");
+    return res.redirect('/contactUs');
+  })
+  .catch(function (err) {
+    sails.log.error('UserController#queryAction :: Error ::', err);
+    req.flash("errors", "Please try again");
+    return res.redirect('/contactUs');
+  });
+}
+
+function applyOnlineAction(req, res) {
+  var form = req.form;
+  if(!form.isValid) {
+    // TODO: throw error
+    var flashMessages = ValidationService
+      .getFormFlashMessages(req.form.getErrors());
+    _.forEach(flashMessages, function (message) {
+      req.flash('errors', message);
+    });
+
+    return res.redirect('/apply');
+
+  }
+  Application
+  .addApplication(form)
+  .then(function(data) {
+    req.flash("message", "We will come back to you soon...");
+    return res.redirect('/apply');
+  })
+  .catch(function (err) {
+    sails.log.error('UserController#applyOnlineAction :: Error ::', err);
+    req.flash("errors", "Please try again");
+    return res.redirect('/apply');
+  });
+}
+
+function requestCallBackAction(req, res) {
+  var form = req.form;
+  if(!form.isValid) {
+    // TODO: throw error
+    var flashMessages = ValidationService
+      .getFormFlashMessages(req.form.getErrors());
+    _.forEach(flashMessages, function (message) {
+      req.flash('errors', message);
+    });
+
+    return res.redirect('/');
+
+  }
+  Callback
+  .addCallback(form)
+  .then(function(data) {
+    req.flash("message", "We will come back to you soon...");
+    return res.redirect('/');
+  })
+  .catch(function (err) {
+    sails.log.error('UserController#requestCallBackAction :: Error ::', err);
+    req.flash("errors", "Please try again");
+    return res.redirect('/');
   });
 }

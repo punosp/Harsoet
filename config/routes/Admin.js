@@ -182,5 +182,29 @@ module.exports.routes = {
   'get /admin/college/:id/delete': {
     controller: 'AdminController',
     action: 'collegeDelete'
+  },
+  'get /admin/query': {
+    controller: 'AdminController',
+    action: 'getQuery'
+  },
+  'get /admin/query/:id/delete': {
+    controller: 'AdminController',
+    action: 'deleteQuery'
+  },
+  'get /admin/callback': {
+    controller: 'AdminController',
+    action: 'getCallback'
+  },
+  'get /admin/call/:id/delete': {
+    controller: 'AdminController',
+    action: 'deleteCallback'
+  },
+  'get /admin/application': {
+    controller: 'AdminController',
+    action: 'getApplication'
+  },
+  'get /admin/app/:id/delete': {
+    controller: 'AdminController',
+    action: 'deleteApp'
   }
 };

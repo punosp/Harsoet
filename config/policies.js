@@ -98,10 +98,19 @@ module.exports.policies = {
     companyTeamDelete:["isAuthenticated","isAdminRole"],
     collegeDelete: ["isAuthenticated","isAdminRole"],
 
+    getQuery: ["isAuthenticated","isAdminRole"],
+    deleteQuery: ["isAuthenticated","isAdminRole"],
+    getCallback: ["isAuthenticated","isAdminRole"],
+    deleteCallback: ["isAuthenticated","isAdminRole"],
+    getApplication: ["isAuthenticated","isAdminRole"],
+    deleteApp: ["isAuthenticated","isAdminRole"],
+
     errorPage: ["isAuthenticated","isAdminRole"]
 
   },
   UserController: {
-
+    query: "validation/QueryValidation",
+    applyOnline: "validation/ApplicationValidation",
+    requestCallBack: "validation/CallbackValidation"
   }
 };

@@ -148,8 +148,25 @@ var mappings = {
   ESTABLISHMENT_YEAR_MUST_BE_NUMBER: 'Establishment year must be numeric',
   FEE_REQUIRED: 'Please enter the total fees',
   FEE_MUST_BE_NUMBER: 'Fee must be a number',
-  COLLEGE_DETAILS_REQUIRED: 'Please enter college details'
+  COLLEGE_DETAILS_REQUIRED: 'Please enter college details',
 
+  EMAIL_REQUIRED: 'Please enter your valid email address',
+  INVALID_EMAIL: 'Please enter your valid email address',
+  MAX_EMAIL_LENGTH: 'Email address should be less than 50 characters',
+  NAME_REQUIRED: 'Please enter your name',
+  MAX_NAME_LENGTH: 'Name cannot be more than 50 characters',
+  PHONE_MAX_LENGTH: 'Phone cannot be more than 20 nos',
+  MESSAGE_REQUIRED: 'Please write your query',
+  MESSAGE_MAX_LENGTH: 'Query should be less than 2000 characters',
+  CITY_MAX_LENGTH: 'City name should be less than 50 characters',
+  PCB_MAX_LENGTH: 'pcb % should be less than 10 characters',
+  PASSING_YEAR_MAX_LENGTH: 'Passing year should be less than 4 digits',
+  COUNTRY_MAX_LENGTH: 'Country name should be less than 50 characters',
+  COLLEGE_MAX_LENGTH: 'College name should be less than 50 characters',
+  PASSPORT_MAX_LENGTH: 'Don\'t mess with passport menu',
+  MUST_BE_VALID_YEAR: 'Please enter a valid year',
+  SUBJECT_MAX_LENGTH: 'Subject length should be less than 100 words',
+  PHONE_REQUIRED: 'Please enter the phone no'
 };
 
 

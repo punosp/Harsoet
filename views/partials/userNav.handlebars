@@ -22,6 +22,16 @@
 <header class="header-area">
     <div class="container">
         <div class="row">
+          {{#if message }}
+                        <div class="alert alert-success" id="success-alert" role="alert">
+                          {{#each message}}
+
+                              <p>{{this}}</p>
+
+                          {{/each}}
+                        </div>
+                    {{/if}}
+
             <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
                 <div class="logo">
                     <a href="/"><img src="/images/logo1.png" alt="Awesome Logo" style="witdth: 50px;height:50px"></a>
@@ -91,7 +101,7 @@
                     <li class="dropdown {{#ifCond page "service"}}current{{/ifCond}}"><a href="/services">Services</a>
                         <ul>
                             <li><a href="/mbbs">MBBS consultancy</a></li>
-                            <li><a href="/job">Job consultancy</a></li>
+                            <li><a href="#">Job consultancy</a></li>
                         </ul>
                     </li>
 

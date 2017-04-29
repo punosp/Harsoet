@@ -1,6 +1,6 @@
 
 <!--Start breadcrumb area-->
-<section class="breadcrumb-area" style="background-image: url(img/breadcrumb/breadcrumb-bg.jpg);">
+<section class="breadcrumb-area" style="background-image: url(images/feedback.jpeg);">
 	<div class="container text-center">
 		<h1>Apply Online</h1>
 		<span class="border"></span>
@@ -34,20 +34,30 @@
 <section class="contact-form-area">
     <div class="container">
         <div class="row">
+
+                    {{#if errors}}
+                        <div class="alert alert-danger" role="alert">
+                          {{#each errors}}
+
+                              <p>{{this}}</p>
+
+                          {{/each}}
+                        </div>
+                    {{/if}}
             <div class="col-md-12">
                 <div class="contact-form">
                     <div class="sec-title two">
-                        <h1>Send Us Your Queries</h1>
+                        <h1>Send Us Your Application</h1>
                         <span class="border"></span>
                     </div>
-                    <form action="/query/post" class="contact-form" action="post">
+                    <form action="/application/post" class="contact-form" method="post">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="input-field">
-                                    <input type="text" placeholder="Your Name*" name="name">
+                                    <input type="text" placeholder="Your Name*" name="name" required>
                                 </div>
                                 <div class="input-field">
-                                    <input type="text" placeholder="Email Address*" name="email">
+                                    <input type="text" placeholder="Email Address*" name="email" required>
                                 </div>
                                 <div class="input-field">
                                     <input type="text" placeholder="Phone" name="phone">
@@ -56,10 +66,10 @@
                                     <input type="text" placeholder="City" name="city">
                                 </div>
 																<div class="input-field">
-                                    <input type="text" placeholder="P.C.B.%" name="subject">
+                                    <input type="text" placeholder="P.C.B.% (without % sign)" name="pcbPercent">
                                 </div>
 																<div class="input-field">
-                                    <input type="text" placeholder="Passing Year" name="passingYear">
+                                    <input type="text" placeholder="Passing Year" name="passYear">
                                 </div>
 
                             </div>
@@ -68,18 +78,18 @@
 																	<input type="text" placeholder="Country Opted" name="countryOpted">
 															</div>
 															<div class="input-field">
-																	<input type="text" placeholder="Medical college opted" name="medicalCollegeOpted">
+																	<input type="text" placeholder="Medical college opted" name="medCollegeOpted">
 															</div>
 															<div class="select-field">
-																	<select class="selectpicker" name="passport">
-																			<option>Passport Ready</option>
-																			<option>Passport in Process</option>
-																			<option>Not Applied Yet</option>
+																	<select class="selectpicker" name="passportStatus">
+																			<option value="0">Passport Ready</option>
+																			<option value="1">Passport in Process</option>
+																			<option value="2">Not Applied Yet</option>
 																	</select>
 																	<br>
 																	<br>
 															</div>
-                                <textarea placeholder="Message*" name="message"></textarea>
+                                <textarea placeholder="Message*" name="message" required></textarea>
                                 <button type="submit">Submit Now</button>
                             </div>
                         </div>

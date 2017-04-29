@@ -30,11 +30,13 @@ function getValidationErrors(errors) {
 function getFormFlashMessages(errors) {
   // push errors to messages array
   var messages = [];
+  //console.log("mm");
   // get all the errors as array and return
   _.forEach(errors, function(fieldErrors) {
     _.forEach(fieldErrors, function(error) {
       var errorMessage = ErrorMessages.mappings[error] ? ErrorMessages.mappings[error] : 'Error';
       // push
+      //console.log(errorMessage);
       messages.push(errorMessage);
     });
   });

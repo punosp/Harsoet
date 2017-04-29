@@ -78,7 +78,7 @@ module.exports = {
     partialData: partialData
   };
 
-  function partialData(req, res) {
+  function partialData() {
     return Q.promise(function (resolve, reject) {
 
       var addresses, updates, team;

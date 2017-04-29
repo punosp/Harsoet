@@ -45,10 +45,10 @@ module.exports.routes = {
     controller: 'UserController',
     action: 'mbbs'
   },
-  'get /job': {
-    controller: 'UserController',
-    action: 'job'
-  },
+  // 'get /job': {
+  //   controller: 'UserController',
+  //   action: 'job'
+  // },
   'post /user/requestCallBack': {
     controller: 'UserController',
     action: 'requestCallBack'
@@ -60,6 +60,22 @@ module.exports.routes = {
   'get /error': {
     controller: 'UserController',
     action: 'errorPage'
+  },
+  'get /college/:id/show': {
+    controller: 'UserController',
+    action: 'college'
+  },
+  'post /query/post': {
+    controller: 'UserController',
+    action: 'query'
+  },
+  'post /application/post': {
+    controller: 'UserController',
+    action: 'applyOnline'
+  },
+  'post /user/requestCallBack': {
+    controller: 'UserController',
+    action: 'requestCallBack'
   }
 
 };

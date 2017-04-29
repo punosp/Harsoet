@@ -1,0 +1,119 @@
+
+    <!-- Content Wrapper. Contains page content -->
+     <div class="content-wrapper">
+       <!-- Content Header (Page header) -->
+       <section class="content-header">
+         {{#if message}}
+                       <div class="alert alert-success" role="alert">
+                         {{#each message}}
+
+                             <p>{{this}}</p>
+
+                         {{/each}}
+                       </div>
+                   {{/if}}
+
+                   {{#if errors}}
+                       <div class="alert alert-danger" role="alert">
+                         {{#each errors}}
+
+                             <p>{{this}}</p>
+
+                         {{/each}}
+                       </div>
+                   {{/if}}
+                   {{#if alert}}
+                       <div class="alert alert-info" role="alert">
+                         {{#each alert}}
+
+                           <p>{{this}}</p>
+
+                         {{/each}}
+                       </div>
+                   {{/if}}
+         <h1>
+           Callback Request
+
+         </h1>
+
+       </section>
+
+       <!-- Main content -->
+       <section class="content">
+         {{#each callback}}
+         <div class="row">
+
+           <div class="col-md-3"></div>
+           <div class="col-md-6">
+               <!-- /.box-header -->
+               <!-- form start -->
+
+               <div class="box box-primary collapsed-box">
+                 <div class="box-header">
+
+                   <h3 class="box-title">Request {{counter @index}}
+                   </h3>
+                   <!-- tools box -->
+                   <div class="pull-right box-tools">
+                     <button type="button" class="btn btn-info btn-sm" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                       <i class="fa fa-plus"></i></button>
+
+                   </div>
+                   <br>
+                   <br>
+                   <div>
+
+                     <a href="/admin/call/{{this.id}}/delete" class="btn btn-danger pull-right" style="margin-right: 10px"> Delete </a>
+                   </div>
+
+                   <!-- /. tools -->
+                 </div>
+                 <!-- /.box-header -->
+                 <div class="box-body pad">
+                   <table class='table table-striped'>
+                     <tr>
+
+                       <th>Name</th>
+                       <td>{{this.name}}</td>
+
+                     </tr>
+                     <tr>
+
+                       <th>Email</th>
+                       <td>{{this.email}}</td>
+
+                     </tr>
+                     <tr>
+
+                       <th>Phone</th>
+                       <td>{{this.phone}}</td>
+
+                     </tr>
+                     <tr>
+
+                       <th>Subject</th>
+                       <td>{{this.subject}}</td>
+
+                     </tr>
+
+
+
+
+                   </table>
+                 </div>
+               </div>
+
+
+             </div>
+
+           <!-- /.col-->
+
+         <div class="col-md-3"></div>
+         <!-- ./row -->
+
+       </div>
+{{/each}}
+       </section>
+       <!-- /.content -->
+</div>
+     <!-- /.content-wrapper -->

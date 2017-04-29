@@ -1,6 +1,6 @@
 
 <!--Start breadcrumb area-->
-<section class="breadcrumb-area" style="background-image: url(img/breadcrumb/breadcrumb-bg.jpg);">
+<section class="breadcrumb-area" style="background-image: url(images/call2.jpg);">
 	<div class="container text-center">
 		<h1>Contact Us</h1>
 		<span class="border"></span>
@@ -34,20 +34,30 @@
 <section class="contact-form-area">
     <div class="container">
         <div class="row">
+
+                    {{#if errors}}
+                        <div class="alert alert-danger" role="alert">
+                          {{#each errors}}
+
+                              <p>{{this}}</p>
+
+                          {{/each}}
+                        </div>
+                    {{/if}}
             <div class="col-md-12">
                 <div class="contact-form">
                     <div class="sec-title two">
                         <h1>Send Us Your Queries</h1>
                         <span class="border"></span>
                     </div>
-                    <form action="/query/post" class="contact-form" action="post">
+                    <form action="/query/post" class="contact-form" method="post">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="input-field">
-                                    <input type="text" placeholder="Your Name*" name="name">
+                                    <input type="text" placeholder="Your Name*" name="name" required>
                                 </div>
                                 <div class="input-field">
-                                    <input type="text" placeholder="Email Address*" name="email">
+                                    <input type="text" placeholder="Email Address*" name="email" required>
                                 </div>
                                 <div class="input-field">
                                     <input type="text" placeholder="Phone" name="phone">
@@ -57,7 +67,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <textarea placeholder="Message*" name="message"></textarea>
+                                <textarea placeholder="Message*" name="message" required></textarea>
                                 <button type="submit">Submit Now</button>
                             </div>
                         </div>

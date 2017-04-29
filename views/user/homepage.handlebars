@@ -1,5 +1,6 @@
 
 <!--Start Rev Slider Wrapper-->
+
 <section class="rev_slider_wrapper">
     <div id="slider1" class="rev_slider"  data-version="5.0">
         <ul>
@@ -227,11 +228,11 @@
             <!--Start single industry expertise item-->
             <div class="col-md-6 center-block">
                 <div class="single-industry-expertise-item">
-                    <a href="#"><div class="icon-holder">
+                    <a href="/mbbs"><div class="icon-holder">
                         <span class="flaticon-business-2"></span>
                     </div></a>
                     <div class="content">
-                        <a href="#"><h3>MBBS Colleges</h3></a>
+                        <a href="/mbbs"><h3>MBBS Colleges</h3></a>
                         <p>We help people select best MBBS colleges for themselves across many countries. </p>
                     </div>
                 </div>
@@ -482,19 +483,20 @@
 <section class="call-back-area">
     <div class="container">
         <div class="row">
+
             <div class="col-md-6 col-md-offset-6">
                 <div class="call-back-form">
                     <div class="sec-title pull-left">
                         <h1>Request a Call Back.</h1>
                         <span class="border"></span>
                     </div>
-                    <form action="/user/requestCallBack">
+                    <form action="/user/requestCallBack" method="post">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="select-field">
-                                    <select class="selectpicker" name="interest">
-                                        <option>MBBS Consultancy</option>
-                                        <option>Job Consultancy</option>
+                                    <select class="selectpicker" name="subject">
+                                        <option value="MBBS Consultancy">MBBS Consultancy</option>
+                                        <option value="Job Consultancy">Job Consultancy</option>
                                     </select>
                                 </div>
                             </div>
@@ -509,7 +511,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <input type="text" name="phone" placeholder="Phone Number *">
+                                <input type="text" name="phone" placeholder="Phone Number *" required>
                             </div>
                             <div class="col-md-6">
                                 <button class="hvr-sweep-to-bottom" type="submit">Submit</button>

@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="/Statistic/css/style.css">
 	<!-- responsive stylesheet -->
 	<link rel="stylesheet" href="/Statistic/css/responsive.css">
+	<link rel="stylesheet" href="/AdminLTE-2.3.7/plugins/datatables/dataTables.bootstrap.css">
 
 
   </head>
@@ -115,12 +116,29 @@
     <script src="/Statistic/assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
     <script src="/Statistic/assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script src="/Statistic/assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+		<script src="/AdminLTE-2.3.7/plugins/datatables/jquery.dataTables.min.js"></script>
+		<script src="/AdminLTE-2.3.7/plugins/datatables/dataTables.bootstrap.min.js"></script>
 
 
 
     <!-- thm custom script -->
     <script src="/Statistic/js/custom.js"></script>
+		<script>
+  $(function () {
+    $('#colleges').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false
+    });
+  });
 
+	$("#success-alert").fadeTo(2000, 500).slideUp(500, function(){
+			$("#success-alert").slideUp(500);
+	});
+</script>
 
     <!--SCRIPTS END-->
   </body>

@@ -64,7 +64,14 @@ module.exports = {
   companyFaqDelete: companyFaqDeleteAction,
   companyNewsDelete: companyNewsDeleteAction,
   companyTeamDelete: companyTeamDeleteAction,
-  collegeDelete: collegeDeleteAction
+  collegeDelete: collegeDeleteAction,
+
+  getQuery: getQueryAction,
+  deleteQuery: deleteQueryAction,
+  getCallback: getCallbackAction,
+  deleteCallback: deleteCallbackAction,
+  getApplication: getApplicationAction,
+  deleteApp : deleteAppAction
 
 }
 
@@ -195,7 +202,7 @@ function resetPasswordAction(req, res) {
     .then(function (user) {
       // form with unique key
       // create a form and render the view
-      return res.view('admin/forgotPasswordReset', {
+       res.view('admin/forgotPasswordReset', {
         message: req.flash("message"),
         user: user,
         errors: req.flash('errors'),
@@ -1063,6 +1070,120 @@ function collegeDeleteAction(req, res) {
     })
     .catch(function (err) {
       sails.log.error('AdminController#collegeDeleteAction :: Error ::', err);
+
+      // check for the error code and accordingly send the response
+      return res.redirect("/admin/"+err.code+"/error");
+    });
+}
+
+
+
+function getQueryAction(req, res) {
+
+  Query
+  .getAllQuery()
+  .then(function(query) {
+    res.view("admin/query", {
+      message: req.flash("message"),
+      errors: req.flash("errors"),
+      query: query,
+      layout: 'adminLayout'
+    });
+  })
+  .catch(function (err) {
+    sails.log.error('AdminController#getQueryAction :: Error ::', err);
+
+    // check for the error code and accordingly send the response
+    return res.redirect("/admin/"+err.code+"/error");
+  })
+}
+
+function deleteQueryAction(req, res) {
+  Query
+    .deleteRecord(req.param('id'))
+    .then(function () {
+      // send success response
+      req.flash("message", "A Query has been deleted");
+
+      return res.redirect('/admin/query');
+    })
+    .catch(function (err) {
+      sails.log.error('AdminController#deleteQueryAction :: Error ::', err);
+
+      // check for the error code and accordingly send the response
+      return res.redirect("/admin/"+err.code+"/error");
+    });
+}
+
+function getCallbackAction(req, res) {
+console.log("hi");
+  Callback
+  .getAllCallback()
+  .then(function(callback) {
+    res.view("admin/callback", {
+      message: req.flash("message"),
+      errors: req.flash("errors"),
+      callback: callback,
+      layout: 'adminLayout'
+    });
+  })
+  .catch(function (err) {
+    sails.log.error('AdminController#getCallbackAction :: Error ::', err);
+
+    // check for the error code and accordingly send the response
+    return res.redirect("/admin/"+err.code+"/error");
+  });
+}
+
+function deleteCallbackAction(req, res) {
+  console.log("hello");
+  Callback
+    .deleteRecord(req.param('id'))
+    .then(function () {
+      // send success response
+      req.flash("message", "A request callback has been deleted");
+
+      return res.redirect('/admin/callback');
+    })
+    .catch(function (err) {
+      sails.log.error('AdminController#deleteCallbackAction :: Error ::', err);
+
+      // check for the error code and accordingly send the response
+      return res.redirect("/admin/"+err.code+"/error");
+    });
+}
+
+function getApplicationAction(req, res) {
+
+  Application
+  .getAllApplication()
+  .then(function(app) {
+    res.view("admin/app", {
+      message: req.flash("message"),
+      errors: req.flash("errors"),
+      app: app,
+      layout: 'adminLayout'
+    });
+  })
+  .catch(function (err) {
+    sails.log.error('AdminController#getApplicationAction :: Error ::', err);
+
+    // check for the error code and accordingly send the response
+    return res.redirect("/admin/"+err.code+"/error");
+  });
+}
+
+function deleteAppAction(req, res) {
+  Application
+    .deleteRecord(req.param('id'))
+    .then(function () {
+      // send success response
+      req.flash("message", "An application has been deleted");
+
+      return res.redirect('/admin/application');
+    })
+    .catch(function (err) {
+      sails.log.error('AdminController#deleteAppAction :: Error ::', err);
 
       // check for the error code and accordingly send the response
       return res.redirect("/admin/"+err.code+"/error");
